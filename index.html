@@ -242,6 +242,8 @@ a:hover{text-decoration:underline}
 .fx-card .fx-pair{font-size:13px;color:var(--text-light);margin-bottom:8px}
 .fx-card .fx-rate{font-size:24px;font-weight:800;color:var(--navy);margin-bottom:4px}
 .fx-card .fx-chg{font-size:12px;font-weight:600}
+.fx-meta{font-size:12px;color:var(--text-light);margin-top:12px;text-align:right}
+.fx-disclaimer{font-size:12px;color:var(--text-light);margin-top:16px;padding:12px 16px;background:var(--bg);border-radius:8px;border-left:3px solid var(--gold)}
 
 /* Data Sources */
 .ds-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
@@ -1093,7 +1095,8 @@ a:hover{text-decoration:underline}
         <div class="num">11</div>
         <h2>实时汇率 <span class="en">FX Rates (CNY)</span></h2>
       </div>
-      <div style="text-align:right;margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px">
+        <span class="fx-meta" id="fxStatus" style="text-align:left;margin-top:0">正在加载汇率…</span>
         <button class="btn btn-outline" onclick="refreshFx()">立即刷新</button>
       </div>
       <div class="fx-grid" id="fxGrid">
@@ -1106,6 +1109,7 @@ a:hover{text-decoration:underline}
         <div class="fx-card"><div class="fx-pair">MXN / CNY</div><div class="fx-rate" data-pair="MXNCNY">0.3845</div><div class="fx-chg" style="color:var(--accent-red)">+0.42%</div></div>
         <div class="fx-card"><div class="fx-pair">INR / CNY</div><div class="fx-rate" data-pair="INRCNY">0.0868</div><div class="fx-chg" style="color:var(--accent-green)">-0.15%</div></div>
       </div>
+      <p class="fx-disclaimer">仅供参考，实盘请以银行牌价为准。汇率数据自动来源于 exchangerate.host / open.er-api.com / frankfurter.app，多源回退，每 10 分钟刷新一次。</p>
     </section>
 
     <!-- 12 数据源管理 -->
@@ -1196,28 +1200,96 @@ function showCatDetail(name) {
   detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
-// FX refresh simulation
-function refreshFx() {
-  const rates = {
-    USDCNY: 7.2485, EURCNY: 7.8912, JPYCNY: 0.0452, GBPCNY: 9.3240,
-    AUDCNY: 4.7820, CADCNY: 5.2980, MXNCNY: 0.3845, INRCNY: 0.0868
-  };
-  document.querySelectorAll('.fx-rate').forEach(el => {
-    const pair = el.getAttribute('data-pair');
-    const base = rates[pair];
-    const change = (Math.random() - 0.5) * 0.01;
-    el.textContent = (base * (1 + change)).toFixed(pair === 'JPYCNY' || pair === 'INRCNY' ? 4 : 4);
-    const chgEl = el.nextElementSibling;
-    const pct = (change * 100).toFixed(2);
-    chgEl.textContent = (pct >= 0 ? '+' : '') + pct + '%';
-    chgEl.style.color = pct >= 0 ? 'var(--accent-red)' : 'var(--accent-green)';
-  });
+// FX multi-source live fetch
+const fxPairMap = { USD: 'USDCNY', EUR: 'EURCNY', JPY: 'JPYCNY', GBP: 'GBPCNY', AUD: 'AUDCNY', CAD: 'CADCNY', MXN: 'MXNCNY', INR: 'INRCNY' };
+let fxLastRates = {};
+let fxAutoRefresh = null;
+
+async function fetchWithTimeout(url, timeoutMs = 8000) {
+  const controller = new AbortController();
+  const t = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, { mode: 'cors', signal: controller.signal });
+    clearTimeout(t);
+    return res;
+  } catch (e) {
+    clearTimeout(t);
+    throw e;
+  }
+}
+
+async function fetchFxRates() {
+  const codes = Object.keys(fxPairMap).join(',');
+  const sources = [
+    { name: 'exchangerate.host', url: `https://api.exchangerate.host/latest?base=CNY&symbols=${codes}` },
+    { name: 'open.er-api.com', url: 'https://open.er-api.com/v6/latest/CNY' },
+    { name: 'frankfurter.app', url: `https://api.frankfurter.app/latest?from=CNY&to=${codes}` }
+  ];
+  let lastErr = null;
+  for (const src of sources) {
+    try {
+      const res = await fetchWithTimeout(src.url, 8000);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      if (!data || !data.rates) throw new Error('invalid response');
+      const rates = {};
+      for (const [code, pair] of Object.entries(fxPairMap)) {
+        const r = data.rates[code];
+        if (typeof r === 'number' && r > 0) rates[pair] = 1 / r;
+      }
+      if (Object.keys(rates).length === 0) throw new Error('no usable rates');
+      return { source: src.name, rates };
+    } catch (err) {
+      lastErr = err;
+      console.warn(`FX source ${src.name} failed:`, err.message);
+    }
+  }
+  throw lastErr || new Error('所有汇率数据源均不可用');
+}
+
+async function refreshFx() {
+  const statusEl = document.getElementById('fxStatus');
+  if (statusEl) statusEl.textContent = '正在更新汇率…';
+  try {
+    const { source, rates } = await fetchFxRates();
+    document.querySelectorAll('.fx-rate').forEach(el => {
+      const pair = el.getAttribute('data-pair');
+      const val = rates[pair];
+      if (!val) return;
+      const prev = fxLastRates[pair];
+      el.textContent = val.toFixed(pair === 'JPYCNY' || pair === 'INRCNY' ? 4 : 4);
+      const chgEl = el.nextElementSibling;
+      if (!prev) {
+        chgEl.textContent = '—';
+        chgEl.style.color = 'var(--text-light)';
+      } else {
+        const change = (val - prev) / prev;
+        const pct = (change * 100);
+        chgEl.textContent = (change >= 0 ? '+' : '') + pct.toFixed(2) + '%';
+        chgEl.style.color = change >= 0 ? 'var(--accent-red)' : 'var(--accent-green)';
+      }
+    });
+    fxLastRates = { ...fxLastRates, ...rates };
+    if (statusEl) {
+      statusEl.textContent = `已更新 · 来源：${source} · ${new Date().toLocaleString('zh-CN')}`;
+    }
+  } catch (err) {
+    console.error('refreshFx failed:', err);
+    if (statusEl) statusEl.textContent = '更新失败：' + err.message + '（显示为参考值）';
+  }
+}
+
+function startFxAutoRefresh() {
+  refreshFx();
+  if (fxAutoRefresh) clearInterval(fxAutoRefresh);
+  fxAutoRefresh = setInterval(refreshFx, 600000); // 10 minutes
 }
 
 function refreshData() {
   refreshFx();
-  alert('数据已刷新（演示模式：汇率随机波动）');
 }
+
+startFxAutoRefresh();
 </script>
 </body>
 </html>
