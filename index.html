@@ -245,6 +245,31 @@ a:hover{text-decoration:underline}
 .fx-meta{font-size:12px;color:var(--text-light);margin-top:12px;text-align:right}
 .fx-disclaimer{font-size:12px;color:var(--text-light);margin-top:16px;padding:12px 16px;background:var(--bg);border-radius:8px;border-left:3px solid var(--gold)}
 
+/* Regional Macro Panel */
+.macro-panel{background:var(--surface);border-radius:12px;padding:24px;border:1px solid var(--border);margin-bottom:24px}
+.macro-panel h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.macro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-bottom:16px}
+.macro-card{background:var(--bg);border-radius:10px;padding:14px;border:1px solid var(--border)}
+.macro-card .mc-label{font-size:12px;color:var(--text-light);margin-bottom:6px}
+.macro-card .mc-value{font-size:20px;font-weight:800;color:var(--navy)}
+.macro-card .mc-unit{font-size:12px;color:var(--text-light);margin-left:3px;font-weight:500}
+.macro-card .mc-date{font-size:11px;color:var(--text-light);margin-top:6px}
+.macro-card .mc-source{font-size:11px;color:var(--text-light);margin-top:4px}
+.macro-card .mc-value.up{color:var(--accent-red)}
+.macro-card .mc-value.down{color:var(--accent-green)}
+.macro-banner{font-size:12px;color:var(--text-light);padding:12px 16px;background:var(--bg);border-radius:8px;border-left:3px solid var(--gold);line-height:1.6}
+.macro-banner a{color:var(--accent-blue);text-decoration:none}
+.macro-banner a:hover{text-decoration:underline}
+
+/* Country macro metrics */
+.dc-macro-metrics{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.dc-macro-metric{font-size:11px;padding:4px 10px;background:#f0f4f8;border-radius:6px;display:flex;align-items:center;gap:4px}
+.dc-macro-metric .lbl{color:var(--text-light)}
+.dc-macro-metric .val{font-weight:700;color:var(--navy)}
+.dc-macro-metric .src{font-size:10px;color:var(--text-light);margin-left:4px}
+.dc-loading{color:var(--accent-blue);font-size:12px;margin:8px 0 4px}
+.dc-error{color:var(--accent-red);font-size:12px;margin:8px 0 4px}
+
 /* Data Sources */
 .ds-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
 .ds-item{background:var(--surface);border-radius:10px;padding:18px;border:1px solid var(--border);display:flex;gap:12px;align-items:flex-start}
@@ -448,6 +473,25 @@ a:hover{text-decoration:underline}
         <div class="num">2</div>
         <h2>区域与国别分析 <span class="en">Demand-Driven Regional Analysis</span></h2>
       </div>
+      <div class="macro-panel" id="regionalMacroPanel">
+        <h3>🌍 全球宏观指标快照 <span style="font-size:12px;font-weight:400;color:var(--text-light)">Central Bank Rates · Freight Indices · Macro Outlook</span></h3>
+        <div class="macro-grid">
+          <div class="macro-card"><div class="mc-label">美联储政策利率</div><div class="mc-value">3.75<span class="mc-unit">%</span></div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / FRED</div></div>
+          <div class="macro-card"><div class="mc-label">欧央行政策利率</div><div class="mc-value">2.40<span class="mc-unit">%</span></div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / FRED</div></div>
+          <div class="macro-card"><div class="mc-label">英国央行政策利率</div><div class="mc-value">3.75<span class="mc-unit">%</span></div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / FRED</div></div>
+          <div class="macro-card"><div class="mc-label">日本央行政策利率</div><div class="mc-value">1.00<span class="mc-unit">%</span></div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / FRED</div></div>
+          <div class="macro-card"><div class="mc-label">中国 1 年期 LPR</div><div class="mc-value">3.00<span class="mc-unit">%</span></div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / FRED</div></div>
+          <div class="macro-card"><div class="mc-label">印度央行政策利率</div><div class="mc-value">5.25<span class="mc-unit">%</span></div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / FRED</div></div>
+          <div class="macro-card"><div class="mc-label">巴西央行政策利率</div><div class="mc-value">14.25<span class="mc-unit">%</span></div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / FRED</div></div>
+          <div class="macro-card"><div class="mc-label">墨西哥央行政策利率</div><div class="mc-value">6.50<span class="mc-unit">%</span></div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / FRED</div></div>
+          <div class="macro-card"><div class="mc-label">加拿大央行政策利率</div><div class="mc-value">2.25<span class="mc-unit">%</span></div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / FRED</div></div>
+          <div class="macro-card"><div class="mc-label">SCFI 综合指数</div><div class="mc-value">3,184.83</div><div class="mc-date">2026-07-14</div><div class="mc-source">来源：Trading Economics / SCFI</div></div>
+          <div class="macro-card"><div class="mc-label">BDI 干散货指数</div><div class="mc-value">2,960.00</div><div class="mc-date">2026-07-13</div><div class="mc-source">来源：Trading Economics / BDI</div></div>
+        </div>
+        <div class="macro-banner" id="regionalMacroBanner">
+          宏观指标中的央行利率、SCFI、BDI 为最近一次可获取的公开值；浏览器端受 CORS/鉴权限制无法直连 FRED 与部分专业数据源实时刷新，页面每日发布时由后台更新。国别 GDP 增速、人口、城市化率由 World Bank Open Data API 在浏览器端实时拉取。
+        </div>
+      </div>
       <div class="demand-grid">
         <div class="demand-card" onclick="toggleDemand(this)">
           <div class="demand-head">
@@ -464,10 +508,10 @@ a:hover{text-decoration:underline}
           </div>
           <div class="demand-detail">
             <div class="dc-countries">
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">美国 <span class="region-tag">北美</span></span><div class="dc-strength"><span class="dc-strength-val high">88</span></div></div><div class="dc-reason">IIJA 与 IRA 基建拨款持续释放，电网升级、桥梁修复项目密集开工。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电动扳手、液压工具、电缆剪</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">印度 <span class="region-tag">南亚</span></span><div class="dc-strength"><span class="dc-strength-val high">85</span></div></div><div class="dc-reason">国家基建管道年度拨款创纪录，公路、铁路与制造业园区建设提速。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">扳手、钳子、切削刀具</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">沙特 <span class="region-tag">中东</span></span><div class="dc-strength"><span class="dc-strength-val high">82</span></div></div><div class="dc-reason">Vision 2030 新城与能源项目推动大型工程承包，进口工具需求旺盛。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">重型手工具、测量仪器</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">印尼 <span class="region-tag">东南亚</span></span><div class="dc-strength"><span class="dc-strength-val med">72</span></div></div><div class="dc-reason">新首都建设与镍矿冶炼投资带动工程机械与配套工具采购。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电动螺丝刀、角磨机</span></span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">美国 <span class="region-tag">北美</span></span><div class="dc-strength"><span class="dc-strength-val high">88</span></div></div><div class="dc-reason">IIJA 与 IRA 基建拨款持续释放，电网升级、桥梁修复项目密集开工。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电动扳手、液压工具、电缆剪</span></span></div><div class="dc-macro-metrics" data-macro="USA"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">印度 <span class="region-tag">南亚</span></span><div class="dc-strength"><span class="dc-strength-val high">85</span></div></div><div class="dc-reason">国家基建管道年度拨款创纪录，公路、铁路与制造业园区建设提速。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">扳手、钳子、切削刀具</span></span></div><div class="dc-macro-metrics" data-macro="IND"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">沙特 <span class="region-tag">中东</span></span><div class="dc-strength"><span class="dc-strength-val high">82</span></div></div><div class="dc-reason">Vision 2030 新城与能源项目推动大型工程承包，进口工具需求旺盛。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">重型手工具、测量仪器</span></span></div><div class="dc-macro-metrics" data-macro="SAU"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">印尼 <span class="region-tag">东南亚</span></span><div class="dc-strength"><span class="dc-strength-val med">72</span></div></div><div class="dc-reason">新首都建设与镍矿冶炼投资带动工程机械与配套工具采购。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电动螺丝刀、角磨机</span></span></div><div class="dc-macro-metrics" data-macro="IDN"><span class="dc-loading">正在加载宏观指标…</span></div></div>
             </div>
           </div>
         </div>
@@ -487,9 +531,9 @@ a:hover{text-decoration:underline}
           </div>
           <div class="demand-detail">
             <div class="dc-countries">
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">美国 <span class="region-tag">北美</span></span><div class="dc-strength"><span class="dc-strength-val med">72</span></div></div><div class="dc-reason">成屋销售回暖带动装修支出，DIY 渠道库存周期触底。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电钻、砂光机、激光水平仪</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">德国 <span class="region-tag">欧洲</span></span><div class="dc-strength"><span class="dc-strength-val med">65</span></div></div><div class="dc-reason">能源改造与建筑节能翻新推动专业承包商工具更新。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">冲击钻、多功能工具</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">日本 <span class="region-tag">东亚</span></span><div class="dc-strength"><span class="dc-strength-val med">60</span></div></div><div class="dc-reason">老龄化住宅改造与防灾加固需求稳定。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">精密螺丝刀、手动扳手</span></span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">美国 <span class="region-tag">北美</span></span><div class="dc-strength"><span class="dc-strength-val med">72</span></div></div><div class="dc-reason">成屋销售回暖带动装修支出，DIY 渠道库存周期触底。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电钻、砂光机、激光水平仪</span></span></div><div class="dc-macro-metrics" data-macro="USA"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">德国 <span class="region-tag">欧洲</span></span><div class="dc-strength"><span class="dc-strength-val med">65</span></div></div><div class="dc-reason">能源改造与建筑节能翻新推动专业承包商工具更新。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">冲击钻、多功能工具</span></span></div><div class="dc-macro-metrics" data-macro="DEU"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">日本 <span class="region-tag">东亚</span></span><div class="dc-strength"><span class="dc-strength-val med">60</span></div></div><div class="dc-reason">老龄化住宅改造与防灾加固需求稳定。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">精密螺丝刀、手动扳手</span></span></div><div class="dc-macro-metrics" data-macro="JPN"><span class="dc-loading">正在加载宏观指标…</span></div></div>
             </div>
           </div>
         </div>
@@ -509,9 +553,9 @@ a:hover{text-decoration:underline}
           </div>
           <div class="demand-detail">
             <div class="dc-countries">
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">墨西哥 <span class="region-tag">拉美</span></span><div class="dc-strength"><span class="dc-strength-val high">82</span></div></div><div class="dc-reason">近岸制造与汽车产业转移，工业工具进口快速增长。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">气动工具、扭力扳手</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">越南 <span class="region-tag">东南亚</span></span><div class="dc-strength"><span class="dc-strength-val high">78</span></div></div><div class="dc-reason">电子与纺织制造业扩张，自动化产线维护工具需求上升。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电动螺丝刀、静电工具</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">土耳其 <span class="region-tag">中东欧</span></span><div class="dc-strength"><span class="dc-strength-val med">70</span></div></div><div class="dc-reason">汽车与家电制造业复苏，工业级手工具与电动工具采购增加。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">套筒扳手、角磨机</span></span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">墨西哥 <span class="region-tag">拉美</span></span><div class="dc-strength"><span class="dc-strength-val high">82</span></div></div><div class="dc-reason">近岸制造与汽车产业转移，工业工具进口快速增长。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">气动工具、扭力扳手</span></span></div><div class="dc-macro-metrics" data-macro="MEX"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">越南 <span class="region-tag">东南亚</span></span><div class="dc-strength"><span class="dc-strength-val high">78</span></div></div><div class="dc-reason">电子与纺织制造业扩张，自动化产线维护工具需求上升。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电动螺丝刀、静电工具</span></span></div><div class="dc-macro-metrics" data-macro="VNM"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">土耳其 <span class="region-tag">中东欧</span></span><div class="dc-strength"><span class="dc-strength-val med">70</span></div></div><div class="dc-reason">汽车与家电制造业复苏，工业级手工具与电动工具采购增加。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">套筒扳手、角磨机</span></span></div><div class="dc-macro-metrics" data-macro="TUR"><span class="dc-loading">正在加载宏观指标…</span></div></div>
             </div>
           </div>
         </div>
@@ -531,9 +575,9 @@ a:hover{text-decoration:underline}
           </div>
           <div class="demand-detail">
             <div class="dc-countries">
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">美国 <span class="region-tag">北美</span></span><div class="dc-strength"><span class="dc-strength-val high">80</span></div></div><div class="dc-reason">草坪文化与环保法规推动锂电割草机、链锯替代燃油产品。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">锂电割草机、修枝剪</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">德国 <span class="region-tag">欧洲</span></span><div class="dc-strength"><span class="dc-strength-val med">72</span></div></div><div class="dc-reason">噪音与排放限制趋严，专业园林服务公司加速电动化。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">锂电吹风机、绿篱机</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">澳大利亚 <span class="region-tag">大洋洲</span></span><div class="dc-strength"><span class="dc-strength-val med">65</span></div></div><div class="dc-reason">干旱与火灾后植被清理需求增加，户外动力工具销量稳定。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">链锯、割灌机</span></span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">美国 <span class="region-tag">北美</span></span><div class="dc-strength"><span class="dc-strength-val high">80</span></div></div><div class="dc-reason">草坪文化与环保法规推动锂电割草机、链锯替代燃油产品。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">锂电割草机、修枝剪</span></span></div><div class="dc-macro-metrics" data-macro="USA"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">德国 <span class="region-tag">欧洲</span></span><div class="dc-strength"><span class="dc-strength-val med">72</span></div></div><div class="dc-reason">噪音与排放限制趋严，专业园林服务公司加速电动化。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">锂电吹风机、绿篱机</span></span></div><div class="dc-macro-metrics" data-macro="DEU"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">澳大利亚 <span class="region-tag">大洋洲</span></span><div class="dc-strength"><span class="dc-strength-val med">65</span></div></div><div class="dc-reason">干旱与火灾后植被清理需求增加，户外动力工具销量稳定。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">链锯、割灌机</span></span></div><div class="dc-macro-metrics" data-macro="AUS"><span class="dc-loading">正在加载宏观指标…</span></div></div>
             </div>
           </div>
         </div>
@@ -553,9 +597,9 @@ a:hover{text-decoration:underline}
           </div>
           <div class="demand-detail">
             <div class="dc-countries">
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">中国 <span class="region-tag">东亚</span></span><div class="dc-strength"><span class="dc-strength-val high">88</span></div></div><div class="dc-reason">风光大基地与储能装机持续高增，电力安装工具内需强劲。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电缆剪、压接钳、绝缘工具</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">美国 <span class="region-tag">北美</span></span><div class="dc-strength"><span class="dc-strength-val high">84</span></div></div><div class="dc-reason">电网现代化投资与 IRA 补贴推动光伏安装需求。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">光伏安装工具、扭矩扳手</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">巴西 <span class="region-tag">拉美</span></span><div class="dc-strength"><span class="dc-strength-val med">70</span></div></div><div class="dc-reason">分布式光伏与农村电气化项目拉动基础电工工具。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">剥线钳、万用表、电烙铁</span></span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">中国 <span class="region-tag">东亚</span></span><div class="dc-strength"><span class="dc-strength-val high">88</span></div></div><div class="dc-reason">风光大基地与储能装机持续高增，电力安装工具内需强劲。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">电缆剪、压接钳、绝缘工具</span></span></div><div class="dc-macro-metrics" data-macro="CHN"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">美国 <span class="region-tag">北美</span></span><div class="dc-strength"><span class="dc-strength-val high">84</span></div></div><div class="dc-reason">电网现代化投资与 IRA 补贴推动光伏安装需求。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">光伏安装工具、扭矩扳手</span></span></div><div class="dc-macro-metrics" data-macro="USA"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">巴西 <span class="region-tag">拉美</span></span><div class="dc-strength"><span class="dc-strength-val med">70</span></div></div><div class="dc-reason">分布式光伏与农村电气化项目拉动基础电工工具。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">剥线钳、万用表、电烙铁</span></span></div><div class="dc-macro-metrics" data-macro="BRA"><span class="dc-loading">正在加载宏观指标…</span></div></div>
             </div>
           </div>
         </div>
@@ -575,8 +619,8 @@ a:hover{text-decoration:underline}
           </div>
           <div class="demand-detail">
             <div class="dc-countries">
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">乌克兰 <span class="region-tag">东欧</span></span><div class="dc-strength"><span class="dc-strength-val high">85</span></div></div><div class="dc-reason">欧盟重建基金优先采购建筑与拆除工具，需求集中释放。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">锤、撬棍、切割锯、发电机</span></span></div></div>
-              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">巴基斯坦 <span class="region-tag">南亚</span></span><div class="dc-strength"><span class="dc-strength-val med">65</span></div></div><div class="dc-reason">洪灾后重建与基础设施修复推动手动工具进口。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">泥瓦工具、木工工具</span></span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">乌克兰 <span class="region-tag">东欧</span></span><div class="dc-strength"><span class="dc-strength-val high">85</span></div></div><div class="dc-reason">欧盟重建基金优先采购建筑与拆除工具，需求集中释放。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">锤、撬棍、切割锯、发电机</span></span></div><div class="dc-macro-metrics" data-macro="UKR"><span class="dc-loading">正在加载宏观指标…</span></div></div>
+              <div class="dc-country"><div class="dc-country-head"><span class="dc-country-name">巴基斯坦 <span class="region-tag">南亚</span></span><div class="dc-strength"><span class="dc-strength-val med">65</span></div></div><div class="dc-reason">洪灾后重建与基础设施修复推动手动工具进口。</div><div class="dc-metrics"><span class="dc-metric"><span class="lbl">需求品类</span><span class="val">泥瓦工具、木工工具</span></span></div><div class="dc-macro-metrics" data-macro="PAK"><span class="dc-loading">正在加载宏观指标…</span></div></div>
             </div>
           </div>
         </div>
@@ -1119,17 +1163,17 @@ a:hover{text-decoration:underline}
         <h2>数据源管理 <span class="en">Data Sources</span></h2>
       </div>
       <div class="ds-grid">
-        <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>FRED 央行利率</h4><p>美联储、欧央行等主要央行政策利率与点阵图数据</p></div></div>
-        <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>World Bank 国别指标</h4><p>基建投资、制造业 PMI、GDP 与人口结构数据</p></div></div>
+        <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>FRED 央行利率</h4><p>美联储、欧央行、英/日/中/印/巴/墨/加等 9 家央行政策利率与点阵图数据</p></div></div>
+        <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>World Bank 国别指标</h4><p>14 国 GDP 增速、总人口、城市化率（浏览器端通过 Open Data API 实时拉取）</p></div></div>
         <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>UN Comtrade</h4><p>全球五金工具进出口贸易流与 HS 编码统计</p></div></div>
         <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>中国海关月度出口</h4><p>按 HS 编码与目的国拆分的中国出口数据</p></div></div>
-        <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>SCFI / BDI 海运指数</h4><p>集装箱与干散货运价指数</p></div></div>
+        <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>SCFI / BDI 海运指数</h4><p>上海出口集装箱运价指数与波罗的海干散货运价指数</p></div></div>
+        <div class="ds-item"><div class="ds-status warn"></div><div class="ds-content"><h4>Reddit / Google Trends</h4><p>工具品类讨论热度、搜索趋势与季节性信号（受样本波动与接口限制影响）</p></div></div>
         <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>RSS 新闻聚合</h4><p>Construction Dive、Builder Online、UN News 等</p></div></div>
         <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>学术论文</h4><p>Crossref / arXiv / DOAJ 工具与材料工程文献</p></div></div>
         <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>投研报告</h4><p>Grand View Research、Frost & Sullivan、Mordor Intelligence</p></div></div>
         <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>展会/事件日历</h4><p>全球五金、建材、工业展会与央行议息日程</p></div></div>
         <div class="ds-item"><div class="ds-status ok"></div><div class="ds-content"><h4>EUR-Lex 欧盟法规</h4><p>EU Battery Regulation、CBAM、CE 指令更新</p></div></div>
-        <div class="ds-item"><div class="ds-status warn"></div><div class="ds-content"><h4>Google Trends</h4><p>品类搜索热度与季节性趋势（受样本波动影响）</p></div></div>
         <div class="ds-item"><div class="ds-status warn"></div><div class="ds-content"><h4>新兴需求探测</h4><p>招标信息、政策文件与新闻语义分析综合信号</p></div></div>
       </div>
     </section>
@@ -1287,9 +1331,95 @@ function startFxAutoRefresh() {
 
 function refreshData() {
   refreshFx();
+  loadCountryMacros();
+}
+
+// Country macro indicators from World Bank
+const countryIsoMap = {
+  'USA': '美国', 'IND': '印度', 'SAU': '沙特', 'IDN': '印尼',
+  'DEU': '德国', 'JPN': '日本', 'MEX': '墨西哥', 'VNM': '越南',
+  'TUR': '土耳其', 'AUS': '澳大利亚', 'CHN': '中国', 'BRA': '巴西',
+  'UKR': '乌克兰', 'PAK': '巴基斯坦'
+};
+
+async function fetchWBIndicator(indicator, codes) {
+  const url = `https://api.worldbank.org/v2/country/${codes}/indicator/${indicator}?format=json&per_page=300&date=2015:2026`;
+  const res = await fetchWithTimeout(url, 15000);
+  if (!res.ok) throw new Error('WB ' + indicator + ' HTTP ' + res.status);
+  const data = await res.json();
+  if (!Array.isArray(data) || data.length < 2) throw new Error('invalid WB response');
+  return data[1];
+}
+
+function formatMacroValue(indicator, value) {
+  if (value === null || value === undefined || isNaN(value)) return '—';
+  if (indicator === 'SP.POP.TOTL') {
+    if (value >= 100000000) return (value / 100000000).toFixed(2) + '亿';
+    if (value >= 1000000) return (value / 1000000).toFixed(2) + '百万';
+    return Math.round(value).toLocaleString('zh-CN');
+  }
+  return value.toFixed(1) + '%';
+}
+
+async function loadCountryMacros() {
+  const codes = Object.keys(countryIsoMap).join(';');
+  const containers = document.querySelectorAll('[data-macro]');
+  containers.forEach(el => {
+    if (!el.querySelector('.dc-loading')) {
+      el.innerHTML = '<span class="dc-loading">正在从 World Bank 加载宏观指标…</span>';
+    }
+  });
+  try {
+    const [gdpItems, popItems, urbItems] = await Promise.all([
+      fetchWBIndicator('NY.GDP.MKTP.KD.ZG', codes),
+      fetchWBIndicator('SP.POP.TOTL', codes),
+      fetchWBIndicator('SP.URB.TOTL.IN.ZS', codes)
+    ]);
+    const data = {};
+    Object.keys(countryIsoMap).forEach(code => { data[code] = {}; });
+    function ingest(items, key) {
+      for (const it of items) {
+        const code = it.countryiso3code;
+        if (!data[code]) continue;
+        if (it.value === null || it.value === undefined) continue;
+        if (!data[code][key] || it.date > data[code][key].date) {
+          data[code][key] = it;
+        }
+      }
+    }
+    ingest(gdpItems, 'gdp');
+    ingest(popItems, 'pop');
+    ingest(urbItems, 'urb');
+    containers.forEach(el => {
+      const code = el.getAttribute('data-macro');
+      const d = data[code];
+      if (!d) {
+        el.innerHTML = '<span class="dc-error">暂无数据</span>';
+        return;
+      }
+      const gdp = d.gdp ? formatMacroValue('NY.GDP.MKTP.KD.ZG', d.gdp.value) : '—';
+      const gdpYear = d.gdp ? d.gdp.date : '';
+      const pop = d.pop ? formatMacroValue('SP.POP.TOTL', d.pop.value) : '—';
+      const popYear = d.pop ? d.pop.date : '';
+      const urb = d.urb ? formatMacroValue('SP.URB.TOTL.IN.ZS', d.urb.value) : '—';
+      const urbYear = d.urb ? d.urb.date : '';
+      el.innerHTML = `
+        <span class="dc-macro-metric"><span class="lbl">GDP增速</span><span class="val">${gdp}</span><span class="src">${gdpYear}</span></span>
+        <span class="dc-macro-metric"><span class="lbl">人口</span><span class="val">${pop}</span><span class="src">${popYear}</span></span>
+        <span class="dc-macro-metric"><span class="lbl">城市化率</span><span class="val">${urb}</span><span class="src">${urbYear}</span></span>
+        <span class="dc-macro-metric"><span class="src">World Bank</span></span>
+      `;
+    });
+  } catch (err) {
+    console.error('loadCountryMacros failed:', err);
+    containers.forEach(el => {
+      el.innerHTML = '<span class="dc-error">宏观指标加载失败：' + err.message + '</span>';
+    });
+  }
 }
 
 startFxAutoRefresh();
+loadCountryMacros();
 </script>
 </body>
 </html>
