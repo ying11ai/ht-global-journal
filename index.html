@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>五金工具行业全球资讯期刊 | HT Global Journal</title>
+<style>
+:root{--bg:#f7f8fa;--surface:#fff;--navy:#1a2332;--navy-light:#243447;--gold:#c9a84c;--gold-light:#e8d49b;--text:#2c3e50;--text-light:#6b7c93;--border:#e2e6ed;--accent-red:#e74c3c;--accent-green:#27ae60;--accent-blue:#2980b9;--accent-orange:#f39c12;--sidebar-w:260px;--header-h:64px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'PingFang SC','Microsoft YaHei','Noto Sans SC',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:15px}
+a{color:var(--accent-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Sidebar */
+.sidebar{position:fixed;top:0;left:0;width:var(--sidebar-w);height:100vh;background:var(--navy);color:#fff;overflow-y:auto;z-index:100;display:flex;flex-direction:column}
+.sidebar-brand{padding:24px 20px 16px;border-bottom:1px solid rgba(255,255,255,.08)}
+.sidebar-brand h1{font-size:18px;font-weight:700;letter-spacing:.5px;color:var(--gold)}
+.sidebar-brand .sub{font-size:12px;color:rgba(255,255,255,.5);margin-top:4px}
+.sidebar-nav{flex:1;padding:12px 0}
+.sidebar-nav a{display:flex;align-items:center;padding:10px 20px;color:rgba(255,255,255,.7);font-size:13.5px;transition:all .2s;border-left:3px solid transparent}
+.sidebar-nav a:hover,.sidebar-nav a.active{color:#fff;background:rgba(255,255,255,.05);border-left-color:var(--gold);text-decoration:none}
+.sidebar-nav a .icon{width:20px;margin-right:10px;text-align:center;font-size:14px;opacity:.6}
+.sidebar-nav .group-label{padding:16px 20px 6px;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.3)}
+.sidebar-footer{padding:16px 20px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:rgba(255,255,255,.35)}
+
+/* Main */
+.main{margin-left:var(--sidebar-w);min-height:100vh}
+
+/* Top Bar */
+.topbar{position:sticky;top:0;background:rgba(247,248,250,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 40px;height:var(--header-h);display:flex;align-items:center;justify-content:space-between;z-index:50}
+.topbar-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--text-light)}
+.topbar-meta .badge{background:var(--gold);color:var(--navy);padding:2px 10px;border-radius:12px;font-weight:600;font-size:12px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;border:none;transition:all .2s}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-primary:hover{background:var(--navy-light)}
+.btn-outline{background:transparent;border:1.5px solid var(--border);color:var(--text)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.btn-group{display:flex;gap:8px}
+
+/* Content */
+.content{padding:32px 40px 80px;max-width:1200px}
+.section{margin-bottom:56px;scroll-margin-top:80px}
+.section-header{display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid var(--navy)}
+.section-header .num{background:var(--navy);color:var(--gold);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0}
+.section-header h2{font-size:20px;font-weight:700;color:var(--navy)}
+.section-header .en{font-size:13px;color:var(--text-light);margin-left:8px;font-weight:400}
+
+/* Report Header */
+.report-hero{background:linear-gradient(135deg,var(--navy) 0%,#2c3e50 100%);color:#fff;padding:48px 40px;margin:-32px -40px 40px;position:relative;overflow:hidden}
+.report-hero::after{content:'';position:absolute;top:0;right:0;width:300px;height:100%;background:linear-gradient(135deg,transparent 50%,rgba(201,168,76,.1) 100%)}
+.report-hero h1{font-size:28px;font-weight:800;margin-bottom:8px}
+.report-hero .tagline{font-size:15px;color:rgba(255,255,255,.7);margin-bottom:20px}
+.report-hero .meta-row{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,.5)}
+.report-hero .meta-row span{display:flex;align-items:center;gap:4px}
+
+/* Executive Summary */
+.exec-summary{background:var(--surface);border-radius:12px;padding:28px;border:1px solid var(--border);margin-bottom:12px}
+.exec-summary .key-point{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border)}
+.exec-summary .key-point:last-child{border-bottom:none}
+.exec-summary .kp-num{background:var(--gold);color:var(--navy);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;margin-top:2px}
+.exec-summary .kp-text{flex:1}
+.exec-summary .kp-text .headline{font-weight:600;color:var(--navy);margin-bottom:2px}
+.exec-summary .kp-text .detail{font-size:13.5px;color:var(--text-light)}
+.exec-summary .kp-tag{font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;flex-shrink:0;align-self:flex-start;margin-top:2px}
+.tag-risk{background:#fde8e8;color:var(--accent-red)}
+.tag-opportunity{background:#e8f5e9;color:var(--accent-green)}
+.tag-watch{background:#fff3e0;color:var(--accent-orange)}
+.tag-info{background:#e3f2fd;color:var(--accent-blue)}
+
+/* Article Cards */
+.article-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+.article-card{background:var(--surface);border-radius:10px;padding:24px;border:1px solid var(--border);transition:box-shadow .2s}
+.article-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.article-card .card-tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;display:inline-block;margin-bottom:10px}
+.article-card h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.5}
+.article-card .card-body{font-size:13.5px;color:var(--text-light);line-height:1.7;margin-bottom:12px}
+.article-card .card-footer{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--text-light)}
+.article-card .card-footer a.source-link{color:var(--accent-blue);text-decoration:none;font-weight:500}
+.article-card .card-footer a.source-link:hover{text-decoration:underline}
+.article-card .source{color:var(--accent-blue)}
+.impact-bar{display:flex;gap:2px;margin-top:8px}
+.impact-bar span{height:4px;border-radius:2px;flex:1}
+.impact-high{background:var(--accent-red)}
+.impact-med{background:var(--accent-orange)}
+.impact-low{background:var(--accent-green)}
+.impact-none{background:var(--border)}
+
+/* Demand Grid */
+.demand-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.demand-card{background:var(--surface);border-radius:12px;border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:all .25s}
+.demand-card:hover{border-color:var(--gold);box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.demand-card.expanded{border-color:var(--accent-blue);box-shadow:0 4px 20px rgba(41,128,185,.12)}
+.demand-head{padding:20px;display:flex;align-items:center;gap:14px}
+.demand-icon{font-size:28px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:#f8f9fa;border-radius:12px;flex-shrink:0}
+.demand-info{flex:1;min-width:0}
+.demand-info h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.demand-info p{font-size:12px;color:var(--text-light);line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.demand-meta{display:flex;align-items:center;gap:12px;margin-top:8px}
+.demand-strength{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600}
+.strength-bar{width:60px;height:6px;background:var(--border);border-radius:3px;overflow:hidden}
+.strength-fill{height:100%;border-radius:3px;transition:width .4s}
+.strength-fill.high{background:linear-gradient(90deg,#27ae60,#2ecc71)}
+.strength-fill.med{background:linear-gradient(90deg,#f39c12,#f1c40f)}
+.strength-fill.low{background:linear-gradient(90deg,#e74c3c,#c0392b)}
+.demand-cnt{font-size:12px;color:var(--text-light)}
+.demand-expand{font-size:11px;color:var(--accent-blue);font-weight:500;margin-left:auto;white-space:nowrap}
+.demand-detail{padding:0 20px 20px;display:none;border-top:1px solid var(--border)}
+.demand-card.expanded .demand-detail{display:block}
+.demand-card.expanded .demand-expand{color:var(--text-light)}
+.dc-countries{margin-top:14px}
+.dc-country{padding:12px 0;border-bottom:1px solid var(--border)}
+.dc-country:last-child{border-bottom:none}
+.dc-country-head{display:flex;align-items:center;justify-content:space-between}
+.dc-country-name{font-weight:600;font-size:14px;color:var(--navy)}
+.dc-country-name .region-tag{font-size:11px;color:var(--text-light);font-weight:400;margin-left:6px}
+.dc-strength{display:flex;align-items:center;gap:6px}
+.dc-strength-val{font-size:13px;font-weight:700}
+.dc-strength-val.high{color:var(--accent-green)}
+.dc-strength-val.med{color:var(--accent-orange)}
+.dc-strength-val.low{color:var(--accent-red)}
+.dc-reason{font-size:12px;color:var(--text-light);margin-top:4px;line-height:1.5}
+.dc-metrics{display:flex;gap:12px;margin-top:8px;flex-wrap:wrap}
+.dc-metric{font-size:12px;padding:4px 10px;background:#f8f9fa;border-radius:6px}
+.dc-metric .lbl{color:var(--text-light)}
+.dc-metric .val{font-weight:600;color:var(--text);margin-left:4px}
+
+/* Trend Cards */
+.trend-list{display:flex;flex-direction:column;gap:16px}
+.trend-card{background:var(--surface);border-radius:10px;padding:24px;border:1px solid var(--border);display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.trend-card .tc-left h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.trend-card .tc-left .tc-desc{font-size:13.5px;color:var(--text-light);line-height:1.7}
+.trend-card .tc-left .tc-drivers{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.trend-card .tc-left .tc-drivers span{font-size:11px;padding:2px 8px;background:var(--bg);border-radius:8px;color:var(--text-light)}
+.trend-card .tc-right{display:flex;flex-direction:column;gap:8px}
+.social-signal{display:flex;align-items:center;gap:8px;font-size:12px}
+.social-signal .platform{width:60px;font-weight:600;color:var(--text)}
+.social-signal .bar-bg{flex:1;height:8px;background:var(--bg);border-radius:4px;overflow:hidden}
+.social-signal .bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--gold),var(--gold-light))}
+.social-signal .pct{width:48px;text-align:right;font-weight:600;color:var(--gold)}
+.tc-meta{display:flex;gap:12px;margin-top:8px;font-size:11px;color:var(--text-light)}
+.tc-meta .sat{padding:1px 6px;border-radius:6px;font-weight:600}
+.sat-high{background:#e8f5e9;color:#27ae60}
+.sat-med{background:#fff3e0;color:#f39c12}
+.sat-low{background:#fde8e8;color:#e74c3c}
+
+/* Supply Chain */
+.sc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.sc-card{background:var(--surface);border-radius:10px;padding:20px;border:1px solid var(--border)}
+.sc-card h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:10px}
+.sc-table{width:100%;border-collapse:collapse;font-size:13px}
+.sc-table th{text-align:left;padding:6px 0;color:var(--text-light);font-weight:500;border-bottom:1px solid var(--border)}
+.sc-table td{padding:6px 0;border-bottom:1px solid rgba(0,0,0,.03)}
+.sc-table .val{font-weight:600}
+.sc-table .chg{font-size:12px}
+
+/* Regulation */
+.reg-list{display:flex;flex-direction:column;gap:12px}
+.reg-item{background:var(--surface);border-radius:10px;padding:20px;border:1px solid var(--border);display:flex;gap:16px}
+.reg-item .reg-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.reg-esg{background:#e8f5e9}
+.reg-std{background:#e3f2fd}
+.reg-warn{background:#fff3e0}
+.reg-item .reg-content h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.reg-item .reg-content p{font-size:13px;color:var(--text-light);line-height:1.6}
+.reg-item .reg-tags{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.reg-item .reg-tags span{font-size:11px;padding:2px 8px;background:var(--bg);border-radius:8px;color:var(--text-light)}
+
+/* Innovation */
+.inno-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.inno-card{background:var(--surface);border-radius:10px;padding:24px;border:1px solid var(--border);border-left:4px solid var(--gold)}
+.inno-card h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.inno-card .inno-stage{font-size:11px;padding:2px 8px;border-radius:8px;display:inline-block;margin-bottom:8px;font-weight:600}
+.stage-lab{background:#e3f2fd;color:#2980b9}
+.stage-pilot{background:#fff3e0;color:#f39c12}
+.stage-commercial{background:#e8f5e9;color:#27ae60}
+.inno-card p{font-size:13px;color:var(--text-light);line-height:1.6}
+.inno-card .tech-direction{margin:8px 0;padding:8px 12px;background:linear-gradient(135deg,#fff8e1,#fff3cd);border-radius:8px;font-size:13px;color:#7c6a0a;line-height:1.5}
+.inno-card .tech-direction .td-label{display:inline-block;font-size:11px;font-weight:700;background:var(--gold);color:#fff;padding:1px 6px;border-radius:4px;margin-right:6px}
+.inno-card .inno-meta{display:flex;gap:12px;margin-top:10px;font-size:12px;color:var(--text-light)}
+.inno-card .inno-meta .cite{font-weight:600;color:var(--gold)}
+.inno-card .inno-meta .doi a{color:var(--accent-blue);font-size:11px}
+
+/* Research Highlights */
+.research-list{display:flex;flex-direction:column;gap:12px}
+.research-item{background:var(--surface);border-radius:10px;padding:20px;border:1px solid var(--border);display:flex;gap:16px;align-items:flex-start}
+.research-item .ri-badge{background:var(--navy);color:var(--gold);padding:4px 10px;border-radius:8px;font-size:11px;font-weight:600;flex-shrink:0;min-width:50px;text-align:center}
+.research-item .ri-content{flex:1}
+.research-item .ri-content h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;line-height:1.5}
+.research-item .ri-content p{font-size:13px;color:var(--text-light);line-height:1.6;margin-bottom:8px}
+.research-item .ri-meta{display:flex;gap:16px;font-size:12px;color:var(--text-light);flex-wrap:wrap}
+.research-item .ri-meta .citations{font-weight:600;color:var(--gold)}
+.research-summary-card{background:linear-gradient(135deg,#f8f4e8,#fdf9ef);border-radius:12px;padding:24px;margin-bottom:20px;border:1px solid #e8dcc0;border-left:5px solid var(--gold)}
+.research-summary-card .rs-header h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:12px}
+.research-summary-card .rs-body p{font-size:14px;color:var(--text);line-height:1.9;letter-spacing:0.02em}
+.kp-research .kp-text .detail{white-space:pre-line;max-height:none!important}
+
+/* Emerging Demand */
+.emerging-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.emerging-card{background:var(--surface);border-radius:10px;padding:24px;border:1px solid var(--border);border-top:4px solid var(--accent-orange)}
+.emerging-card.strong{border-top-color:var(--accent-red)}
+.emerging-card.medium{border-top-color:var(--accent-orange)}
+.emerging-card.weak{border-top-color:var(--accent-blue)}
+.emerging-card h4{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.emerging-card .em-strength{font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;display:inline-block;margin-bottom:10px}
+.emerging-card .em-strength.s-strong{background:#fde8e8;color:var(--accent-red)}
+.emerging-card .em-strength.s-medium{background:#fff3e0;color:var(--accent-orange)}
+.emerging-card .em-strength.s-weak{background:#e3f2fd;color:var(--accent-blue)}
+.emerging-card p{font-size:13px;color:var(--text-light);line-height:1.6;margin-bottom:10px}
+.emerging-card .em-signals{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.emerging-card .em-signals span{font-size:11px;padding:2px 8px;background:var(--bg);border-radius:8px;color:var(--text-light)}
+.emerging-card .em-articles{border-top:1px solid var(--border);padding-top:10px;margin-top:4px}
+.emerging-card .em-articles .em-article{font-size:12px;color:var(--text-light);padding:3px 0;display:flex;justify-content:space-between}
+.emerging-card .em-articles .em-article .em-src{color:var(--accent-blue);font-weight:500}
+
+/* News */
+.news-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.news-card{background:var(--surface);border-radius:10px;padding:20px;border:1px solid var(--border)}
+.news-card .nc-cat{font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;display:inline-block;margin-bottom:8px}
+.news-card h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:6px;line-height:1.5}
+.news-card .nc-meta{font-size:12px;color:var(--text-light);display:flex;justify-content:space-between}
+
+/* Category Explorer */
+.cat-explorer{background:var(--surface);border-radius:12px;border:1px solid var(--border);overflow:hidden}
+#weekly-insights-container{padding:16px 20px;border-bottom:1px solid var(--border)}
+#weekly-insights-container:empty{display:none;padding:0;border:none}
+.section-insights{padding:0 20px 16px}
+.section-insights:empty{display:none;padding:0}
+.cat-toolbar{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;gap:12px;align-items:center}
+.cat-search{flex:1;padding:8px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;outline:none;transition:border-color .2s}
+.cat-search:focus{border-color:var(--gold)}
+.cat-filter{padding:8px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;outline:none;background:var(--surface);cursor:pointer}
+.cat-body{display:grid;grid-template-columns:280px 1fr;min-height:400px}
+.cat-l2-list{border-right:1px solid var(--border);overflow-y:auto;max-height:600px}
+.cat-l2-item{padding:10px 20px;cursor:pointer;font-size:13px;border-bottom:1px solid rgba(0,0,0,.03);transition:all .15s;display:flex;justify-content:space-between;align-items:center}
+.cat-l2-item:hover{background:var(--bg)}
+.cat-l2-item.active{background:rgba(201,168,76,.08);border-left:3px solid var(--gold);font-weight:600;color:var(--navy)}
+.cat-l2-item .count{font-size:11px;color:var(--text-light);background:var(--bg);padding:1px 6px;border-radius:8px}
+.cat-detail{padding:24px;overflow-y:auto;max-height:80vh}
+.cat-detail h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.cat-detail .cat-en{font-size:13px;color:var(--text-light);margin-bottom:16px}
+.cat-l3-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.cat-l3-item{padding:10px 14px;background:var(--bg);border-radius:8px;font-size:13px}
+.cat-l3-item .l3zh{font-weight:500;color:var(--text)}
+.cat-l3-item .l3en{font-size:11px;color:var(--text-light);margin-top:2px}
+.cat-hs{margin-top:20px}
+.cat-hs h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:10px}
+.hs-tags{display:flex;flex-wrap:wrap;gap:6px}
+.hs-tag{font-size:12px;padding:4px 10px;background:var(--navy);color:var(--gold-light);border-radius:6px;font-family:'SF Mono',Consolas,monospace;letter-spacing:.5px}
+
+/* Category Rich Detail */
+.cd-section{margin-top:24px;border-top:1px solid var(--border);padding-top:20px}
+.cd-section:first-of-type{border-top:none;margin-top:16px}
+.cd-title{font-size:13px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.cd-title::before{content:'';width:3px;height:14px;background:var(--gold);border-radius:2px;display:inline-block}
+.cd-loading{padding:20px;text-align:center;color:var(--text-light);font-size:13px}
+.cd-trend-summary{padding:16px 20px;border-radius:10px;border:1px solid rgba(201,168,76,.3);background:linear-gradient(135deg,rgba(201,168,76,.04),rgba(26,35,50,.03));font-size:13px;line-height:1.7;color:var(--text)}
+.cd-profile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cd-profile-card{padding:12px 16px;border-radius:8px;background:var(--bg);border:1px solid var(--border)}
+.cd-profile-card .label{font-size:11px;font-weight:600;color:var(--text-light);margin-bottom:4px;text-transform:uppercase}
+.cd-profile-card .value{font-size:13px;color:var(--text);line-height:1.5}
+.cd-reasons{list-style:none;padding:0;margin:0}
+.cd-reasons li{position:relative;padding:8px 0 8px 20px;font-size:13px;color:var(--text);line-height:1.6}
+.cd-reasons li::before{content:'';position:absolute;left:0;top:14px;width:8px;height:8px;background:var(--gold);border-radius:50%}
+.cd-signals{display:flex;flex-wrap:wrap;gap:8px}
+.cd-signal{font-size:12px;padding:5px 12px;border-radius:20px;font-weight:500;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;max-width:320px;overflow:hidden;text-overflow:ellipsis}
+.cd-signal.social{background:#fff0f3;color:#c0392b;border:1px solid #fdd}
+.cd-signal.search{background:#e8f8f0;color:#1a7a4c;border:1px solid #b8e6cc}
+.cd-signal.media{background:#e8f4fd;color:#2471a3;border:1px solid #b3d9f2}
+.cd-signal.amazon{background:#fef9e7;color:#7d6608;border:1px solid #f9e79f}
+.cd-export-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.cd-export-card{padding:14px;border-radius:8px;background:var(--bg);border:1px solid var(--border)}
+.cd-export-card .hs{font-size:11px;color:var(--text-light);font-family:monospace;margin-bottom:6px}
+.cd-export-card .yr-row{display:flex;justify-content:space-between;font-size:13px;padding:3px 0}
+.cd-export-card .yr-row .amt{font-weight:600;color:var(--text)}
+.cd-export-card .yr-row .yoy-up{color:var(--accent-green)}
+.cd-export-card .yr-row .yoy-dn{color:var(--accent-red)}
+.cd-top5{margin-top:8px;padding-top:8px;border-top:1px dashed var(--border)}
+.cd-top5-row{display:flex;justify-content:space-between;font-size:12px;padding:2px 0;color:var(--text)}
+.cd-analysis-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.cd-analysis-card{padding:14px;border-radius:8px;background:var(--bg);border-left:3px solid var(--border)}
+.cd-analysis-card .dim-label{font-size:12px;font-weight:600;margin-bottom:6px}
+.cd-analysis-card .dim-text{font-size:13px;color:var(--text);line-height:1.6}
+.cd-compliance-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.cd-compliance-card{padding:14px;border-radius:8px;background:var(--bg);border:1px solid var(--border)}
+.cd-compliance-card .mkt{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.cd-compliance-card .row{font-size:12px;color:var(--text);margin-bottom:4px}
+.cd-compliance-card .row b{color:var(--text-light);font-weight:500}
+.cd-demand-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.cd-demand-card{padding:14px;border-radius:8px;background:var(--bg);border:1px solid var(--border)}
+.cd-demand-card .scene{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.cd-demand-card .crowd{font-size:12px;color:var(--gold);margin-bottom:6px}
+.cd-demand-card .reason{font-size:13px;color:var(--text);line-height:1.5}
+.cd-kw-badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.cd-kw-badge{font-size:11px;padding:3px 10px;background:rgba(41,128,185,.08);color:var(--accent-blue);border-radius:12px;border:1px solid rgba(41,128,185,.2)}
+
+/* Events Calendar */
+.events-list{display:flex;flex-direction:column;gap:10px}
+.event-item{display:flex;gap:16px;align-items:flex-start;background:var(--surface);border-radius:10px;padding:16px 20px;border:1px solid var(--border)}
+.event-date{background:var(--navy);color:var(--gold);padding:8px 12px;border-radius:8px;text-align:center;flex-shrink:0;min-width:60px}
+.event-date .month{font-size:11px;text-transform:uppercase}
+.event-date .day{font-size:20px;font-weight:700;line-height:1.2}
+.event-info h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.event-info p{font-size:13px;color:var(--text-light)}
+.event-info .event-tags{display:flex;gap:6px;margin-top:6px}
+.event-info .event-tags span{font-size:11px;padding:2px 8px;background:var(--bg);border-radius:8px;color:var(--text-light)}
+
+/* Data Source Table */
+.ds-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.ds-card{background:var(--surface);border-radius:10px;padding:16px;border:1px solid var(--border)}
+.ds-card h5{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.ds-card .ds-type{font-size:11px;padding:2px 6px;border-radius:6px;display:inline-block;margin-bottom:6px;font-weight:600}
+.ds-auto{background:#e8f5e9;color:#27ae60}
+.ds-semi{background:#fff3e0;color:#f39c12}
+.ds-manual{background:#fde8e8;color:#e74c3c}
+.ds-card p{font-size:12px;color:var(--text-light);line-height:1.5}
+
+/* FX Rates */
+.fx-toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:12px;flex-wrap:wrap}
+.fx-meta{font-size:12px;color:var(--text-light)}
+.fx-meta .fx-status-ok{color:#27ae60;font-weight:600}
+.fx-meta .fx-status-warn{color:#f39c12;font-weight:600}
+.fx-meta .fx-status-err{color:#e74c3c;font-weight:600}
+.fx-refresh{padding:6px 14px;font-size:12px;background:var(--surface);color:var(--navy);border:1px solid var(--border);border-radius:6px;cursor:pointer;font-weight:600}
+.fx-refresh:hover{background:#f0f4ff;border-color:#4fc3f7}
+.fx-refresh:disabled{opacity:.5;cursor:wait}
+.fx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.fx-card{background:var(--surface);border-radius:10px;padding:16px;border:1px solid var(--border);position:relative;overflow:hidden}
+.fx-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent,#4fc3f7)}
+.fx-card .fx-pair{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text-light);margin-bottom:6px;font-weight:600}
+.fx-card .fx-flag{font-size:18px}
+.fx-card .fx-rate{font-size:26px;font-weight:700;color:var(--navy);font-feature-settings:'tnum';letter-spacing:-0.5px}
+.fx-card .fx-rate small{font-size:13px;color:var(--text-light);font-weight:500;margin-left:4px}
+.fx-card .fx-change{font-size:12px;margin-top:4px;font-weight:600}
+.fx-card .fx-change.up{color:#e74c3c}
+.fx-card .fx-change.down{color:#27ae60}
+.fx-card .fx-change.flat{color:#999}
+.fx-card .fx-source{font-size:10px;color:#aaa;margin-top:8px}
+.fx-card.fx-loading{opacity:.6}
+.fx-card.fx-error{border-color:#e74c3c33;background:#fff5f5}
+.fx-disclaimer{font-size:11px;color:#999;margin-top:12px;line-height:1.5}
+
+/* Empty state */
+.empty-state{text-align:center;padding:40px;color:var(--text-light)}
+.empty-state .es-icon{font-size:36px;margin-bottom:12px;opacity:.3}
+.empty-state p{font-size:14px}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(0,0,0,.12);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,.2)}
+
+/* Print Styles */
+@media print{
+  .sidebar,.topbar,.btn,.cat-toolbar .cat-search,.cat-toolbar .cat-filter{display:none!important}
+  .main{margin-left:0!important}
+  .content{padding:10px 16px!important;max-width:100%!important}
+  .report-hero{margin:0!important;padding:16px!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .section{margin-bottom:16px!important;page-break-inside:auto;scroll-margin-top:0}
+  .section-header{margin-bottom:12px!important;padding-bottom:8px!important}
+  .article-card,.country-card,.trend-card,.sc-card,.reg-item,.inno-card,.event-item,.demand-card{page-break-inside:avoid}
+  .article-grid,.country-grid,.demand-grid,.sc-grid,.inno-grid{grid-template-columns:1fr 1fr!important}
+  .demand-detail{display:block!important}
+  body{font-size:11px;orphans:3;widows:3}
+  p,h3,h4,li{orphans:3;widows:3}
+  .cat-explorer{page-break-inside:auto}
+  .cat-body{grid-template-columns:1fr!important}
+  .cat-l2-list{display:none!important}
+  .cat-detail{max-height:none!important;overflow:visible!important;padding:16px!important;width:100%!important}
+  .cat-print-rich .cd-section{page-break-inside:avoid;margin-bottom:16px!important}
+  .cat-print-rich table{font-size:10px!important}
+  .cat-print-rich .cd-trend-summary,.cat-print-rich .cd-analysis{font-size:11px!important;line-height:1.6!important}
+  #weekly-insights-container{padding:8px 0!important;border-bottom:none!important}
+  .section-insights{padding:8px 0 12px!important;margin-bottom:14px!important;border-bottom:1.5px dashed #ccc!important}
+  .section-insights:empty{display:none!important;margin:0!important;border:none!important;padding:0!important}
+  .section-insights .insight-print-sep{display:block!important}
+  /* 禁止浏览器打印时在超链接后追加 (URL) 网址 */
+  a,a:link,a:visited{color:inherit!important;text-decoration:none!important}
+  a[href]::after,a[href]:after{content:""!important;display:none!important}
+  a[href^="http"]::after,a[href^="http"]:after,a[href^="//"]::after,a[href^="//"]:after{content:""!important;display:none!important}
+  h2,h3{page-break-after:avoid}
+  @page{margin:1cm 1.2cm;size:A4}
+  @page{
+    @top-left{content:""}
+    @top-center{content:""}
+    @top-right{content:""}
+    @bottom-left{content:""}
+    @bottom-center{content:counter(page)}
+    @bottom-right{content:""}
+  }
+}
+@media(max-width:900px){
+  .sidebar{display:none}
+  .main{margin-left:0}
+  .content{padding:20px}
+  .cat-body{grid-template-columns:1fr}
+  .trend-card{grid-template-columns:1fr}
+  .article-grid,.country-grid,.demand-grid,.sc-grid,.inno-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="sidebar">
+  <div class="sidebar-brand">
+    <h1>HT Global Journal</h1>
+    <div class="sub">五金工具行业全球资讯期刊</div>
+  </div>
+  <div class="sidebar-nav">
+    <div class="group-label">本期内容</div>
+    <a href="#summary" class="active"><span class="icon">0</span>核心观点</a>
+    <a href="#macro"><span class="icon">1</span>宏观环境</a>
+    <a href="#regional"><span class="icon">2</span>区域与国别分析</a>
+    <a href="#products"><span class="icon">3</span>产品趋势与需求</a>
+    <a href="#innovation"><span class="icon">4</span>技术创新</a>
+    <a href="#supplychain"><span class="icon">5</span>供应链与贸易</a>
+    <a href="#regulation"><span class="icon">6</span>监管与ESG</a>
+    <a href="#research"><span class="icon">7</span>投研摘要</a>
+    <a href="#emerging"><span class="icon">8</span>新兴需求</a>
+    <div class="group-label">工具</div>
+    <a href="#categories"><span class="icon">9</span>品类浏览器</a>
+    <a href="#events"><span class="icon">10</span>事件日历</a>
+    <a href="#fx-rates"><span class="icon">11</span>实时汇率</a>
+    <a href="#sources"><span class="icon">12</span>数据源管理</a>
+  </div>
+  <div class="sidebar-footer">
+    &copy; 2026 HT Global Journal<br>数据更新至 <span id="footer-date"></span>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="main">
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="topbar-meta">
+      <span class="badge" id="issue-num">ISSUE #001</span>
+      <span id="topbar-date"></span>
+      <span>|</span>
+      <span id="topbar-stats"></span>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-outline" onclick="showPDFExport()">导出 PDF</button>
+      <button class="btn btn-primary" onclick="refreshData()">刷新数据</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Report Hero -->
+    <div class="report-hero" id="report-hero">
+      <h1 id="hero-title"></h1>
+      <div class="tagline" id="hero-tagline"></div>
+      <div class="meta-row" id="hero-meta"></div>
+    </div>
+
+    <!-- Executive Summary -->
+    <div class="section" id="summary">
+      <div class="section-header">
+        <div class="num">0</div>
+        <h2>本期核心观点<span class="en">Executive Summary</span></h2>
+      </div>
+      <div class="exec-summary" id="exec-summary"></div>
+    </div>
+
+    <!-- Section 1: Macro -->
+    <div class="section" id="macro">
+      <div class="section-header">
+        <div class="num">1</div>
+        <h2>宏观环境<span class="en">Macro Environment</span></h2>
+      </div>
+      <div id="macro-insights" class="section-insights"></div>
+      <div class="article-grid" id="macro-grid"></div>
+    </div>
+
+    <!-- Section 2: Regional & Country Analysis (Demand-Driven) -->
+    <div class="section" id="regional">
+      <div class="section-header">
+        <div class="num">2</div>
+        <h2>区域与国别分析<span class="en">Demand-Driven Regional Analysis</span></h2>
+      </div>
+      <div id="regional-insights" class="section-insights"></div>
+      <div class="demand-grid" id="demand-grid"></div>
+    </div>
+
+    <!-- Section 3: Product Trends -->
+    <div class="section" id="products">
+      <div class="section-header">
+        <div class="num">3</div>
+        <h2>产品趋势与需求<span class="en">Product Trends & Demand</span></h2>
+      </div>
+      <div id="products-insights" class="section-insights"></div>
+      <div class="trend-list" id="trend-list"></div>
+    </div>
+
+    <!-- Section 4: Innovation -->
+    <div class="section" id="innovation">
+      <div class="section-header">
+        <div class="num">4</div>
+        <h2>技术创新<span class="en">Innovation & Technology</span></h2>
+      </div>
+      <div id="innovation-insights" class="section-insights"></div>
+      <div class="inno-grid" id="inno-grid"></div>
+    </div>
+
+    <!-- Section 5: Supply Chain -->
+    <div class="section" id="supplychain">
+      <div class="section-header">
+        <div class="num">5</div>
+        <h2>供应链与贸易<span class="en">Supply Chain & Trade</span></h2>
+      </div>
+      <div class="sc-grid" id="sc-grid"></div>
+    </div>
+
+    <!-- Section 5.5: Customs Dashboard (海关月度出口看板) -->
+    <div class="section" id="customs-dashboard" style="display:none">
+      <div class="section-header">
+        <div class="num">5b</div>
+        <h2>海关月度出口看板<span class="en">Customs Export Dashboard</span></h2>
+      </div>
+      <div id="customs-dash-content"></div>
+    </div>
+
+    <!-- Section 6: Regulation & ESG -->
+    <div class="section" id="regulation">
+      <div class="section-header">
+        <div class="num">6</div>
+        <h2>监管与ESG<span class="en">Regulation & ESG</span></h2>
+      </div>
+      <div class="reg-list" id="reg-list"></div>
+    </div>
+
+    <!-- Section 7: Research Highlights -->
+    <div class="section" id="research">
+      <div class="section-header">
+        <div class="num">7</div>
+        <h2>投研摘要<span class="en">Research Highlights</span></h2>
+      </div>
+      <div class="research-list" id="research-list"></div>
+    </div>
+
+    <!-- Section 8: Emerging Demand -->
+    <div class="section" id="emerging">
+      <div class="section-header">
+        <div class="num">8</div>
+        <h2>新兴需求<span class="en">Emerging Demand Signals</span></h2>
+      </div>
+      <div class="emerging-list" id="emerging-list"></div>
+    </div>
+
+    <!-- Category Explorer -->
+    <div class="section" id="categories">
+      <div class="section-header">
+        <div class="num">9</div>
+        <h2>品类浏览器<span class="en">Category Explorer</span></h2>
+      </div>
+      <div class="cat-explorer">
+        <div id="weekly-insights-container"></div>
+        <div class="cat-toolbar">
+          <input class="cat-search" type="text" placeholder="搜索品类名称或HS编码..." id="cat-search-input" oninput="filterCategories()">
+          <select class="cat-filter" id="cat-filter" onchange="filterCategories()">
+            <option value="all">全部品类</option>
+            <option value="hs">有HS编码</option>
+          </select>
+        </div>
+        <div class="cat-body">
+          <div class="cat-l2-list" id="cat-l2-list"></div>
+          <div class="cat-detail" id="cat-detail">
+            <div class="empty-state">
+              <div class="es-icon">&#9664;</div>
+              <p>请从左侧选择一个品类分类</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events Calendar -->
+    <div class="section" id="events">
+      <div class="section-header">
+        <div class="num">10</div>
+        <h2>事件日历<span class="en">Events Calendar</span></h2>
+      </div>
+      <div class="events-list" id="events-list"></div>
+    </div>
+
+    <!-- FX Rates -->
+    <div class="section" id="fx-rates">
+      <div class="section-header">
+        <div class="num">11</div>
+        <h2>实时汇率<span class="en">FX Rates (CNY)</span></h2>
+      </div>
+      <div class="fx-toolbar">
+        <span class="fx-meta" id="fx-meta">正在加载汇率数据…</span>
+        <button class="fx-refresh" onclick="refreshFXRates(true)">立即刷新</button>
+      </div>
+      <div class="fx-grid" id="fx-grid"></div>
+      <p class="fx-disclaimer">数据来源: exchangerate.host / open.er-api.com / frankfurter.app（多源自动回退），每 10 分钟刷新一次。仅供参考，实盘请以银行牌价为准。</p>
+    </div>
+
+    <!-- Data Sources -->
+    <div class="section" id="sources">
+      <div class="section-header">
+        <div class="num">12</div>
+        <h2>数据源管理<span class="en">Data Sources</span></h2>
+      </div>
+      <div class="ds-grid" id="ds-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- PDF Export Modal -->
+<div id="pdf-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:9999;justify-content:center;align-items:center">
+  <div style="background:#1a1a2e;border:1px solid #333;border-radius:12px;padding:28px;max-width:520px;width:90%;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.5)">
+    <h3 style="margin:0 0 6px;font-size:18px;color:#e0e0e0">选择导出板块</h3>
+    <p style="margin:0 0 16px;font-size:12px;color:#999">勾选需要包含在PDF中的板块，未勾选的板块将被隐藏</p>
+    <div style="display:flex;gap:8px;margin-bottom:14px">
+      <button onclick="pdfToggleAll(true)" style="padding:4px 12px;font-size:12px;background:#2a2a4a;color:#aaa;border:1px solid #444;border-radius:6px;cursor:pointer">全选</button>
+      <button onclick="pdfToggleAll(false)" style="padding:4px 12px;font-size:12px;background:#2a2a4a;color:#aaa;border:1px solid #444;border-radius:6px;cursor:pointer">全不选</button>
+    </div>
+    <div id="pdf-sections"></div>
+    <div style="display:flex;gap:10px;margin-top:20px;justify-content:flex-end">
+      <button onclick="closePDFModal()" style="padding:8px 20px;background:transparent;color:#aaa;border:1px solid #444;border-radius:8px;cursor:pointer;font-size:14px">取消</button>
+      <button onclick="confirmPDFExport()" style="padding:8px 24px;background:var(--accent-blue,#4fc3f7);color:#000;border:none;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px">生成 PDF</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===================== DATA =====================
+let TAXONOMY = {};
+let WEEK_DATA = {};
+
+// ===================== INIT =====================
+async function init() {
+  try {
+    const taxRes = await fetch('data/taxonomy.json').then(r => r.ok ? r.json() : null).catch(() => null);
+    if (taxRes) TAXONOMY = taxRes;
+    // Auto-detect latest week file
+    var weekData = null;
+    // Try current week first, then fall back to embedded
+    var now = new Date();
+    var yr = now.getFullYear();
+    var wk = Math.ceil(((now - new Date(yr, 0, 1)) / 86400000 + new Date(yr, 0, 1).getDay() + 1) / 7);
+    for (var tryWk = wk; tryWk >= Math.max(wk - 4, 1); tryWk--) {
+      var fn = 'data/week-' + yr + '-' + String(tryWk).padStart(2, '0') + '.json';
+      weekData = await fetch(fn).then(r => r.ok ? r.json() : null).catch(() => null);
+      if (weekData) break;
+    }
+    // Also try previous year's last weeks
+    if (!weekData) {
+      for (var tryWk = 52; tryWk >= 48; tryWk--) {
+        var fn = 'data/week-' + (yr - 1) + '-' + String(tryWk).padStart(2, '0') + '.json';
+        weekData = await fetch(fn).then(r => r.ok ? r.json() : null).catch(() => null);
+        if (weekData) break;
+      }
+    }
+    if (weekData) WEEK_DATA = weekData;
+  } catch(e) { console.warn('Data load failed, using embedded data:', e); }
+
+  // Fallback embedded data
+  if (!WEEK_DATA.issue) WEEK_DATA = getEmbeddedData();
+  if (!TAXONOMY.categories) TAXONOMY = getEmbeddedTaxonomy();
+
+  renderAll();
+  setupNavigation();
+
+  // Kick off live FX rates (non-blocking; multi-source fallback inside)
+  refreshFXRates(false);
+  startFXAutoRefresh();
+}
+
+function renderAll() {
+  const d = WEEK_DATA;
+  document.getElementById('footer-date').textContent = d.date || '';
+  document.getElementById('topbar-date').textContent = d.date || '';
+  document.getElementById('issue-num').textContent = 'ISSUE #' + String(d.issue || 1).padStart(3, '0');
+
+  const countryCount = d.regional ? Object.values(d.regional).reduce((s,r) => s + (r||[]).length, 0) : 0;
+  const cbCount = d.macro ? d.macro.filter(m => m.tag === '央行政策').length : 0;
+  document.getElementById('topbar-stats').textContent =
+    (d.macro ? d.macro.length : 0) + ' 条宏观 | ' +
+    countryCount + ' 国别 | ' +
+    (d.supplyChain ? d.supplyChain.reduce((s,t) => s + (t.data||[]).length, 0) : 0) + ' 商品指标 | ' +
+    (d.innovation ? d.innovation.length : 0) + ' 论文 | ' +
+    (d.events ? d.events.length : 0) + ' 事件';
+
+  renderHero(d);
+  renderSummary(d.keyTakeaways || []);
+  renderSectionInsights();
+  renderMacro(d.macro || []);
+  if (d.demandView && d.demandView.length) {
+    renderDemandView(d.demandView);
+  } else {
+    renderRegional(d.regional || {});
+  }
+  renderTrends(d.trends || []);
+  renderInnovation(d.innovation || []);
+  renderSupplyChain(d.supplyChain || []);
+  renderCustomsDashboard(d.customsDashboard || null);
+  renderRegulation(d.regulation || []);
+  renderResearch(d.researchHighlights || [], d.researchSummary || '');
+  renderEmerging(d.emergingDemand || []);
+  renderCategoryExplorer();
+  renderEvents(d.events || []);
+  renderDataSources(d.dataSources || []);
+}
+
+// ===================== HERO =====================
+function renderHero(d) {
+  document.getElementById('hero-title').textContent = d.title || '建材行业全球资讯期刊';
+  document.getElementById('hero-tagline').textContent = d.tagline || '';
+  const meta = document.getElementById('hero-meta');
+  meta.innerHTML = [
+    d.date ? '<span>发布日期: ' + d.date + '</span>' : '',
+    d.issue ? '<span>期号: #' + String(d.issue).padStart(3,'0') + '</span>' : '',
+    d.coverage ? '<span>覆盖: ' + d.coverage + '</span>' : '',
+    d.sources ? '<span>数据源: ' + d.sources + '</span>' : ''
+  ].filter(Boolean).join('');
+}
+
+// ===================== EXECUTIVE SUMMARY =====================
+function renderSummary(items) {
+  const el = document.getElementById('exec-summary');
+  if (!items.length) { el.innerHTML = '<div class="empty-state"><p>暂无核心观点</p></div>'; return; }
+  el.innerHTML = items.map((it, i) => {
+    const tagClass = {risk:'tag-risk',opportunity:'tag-opportunity',watch:'tag-watch',info:'tag-info'}[it.tag||'info'];
+    const tagLabel = {risk:'风险',opportunity:'机会',watch:'关注',info:'信息'}[it.tag||'info'];
+    // 投研摘要: 展开显示完整内容
+    if (it.type === 'research_summary') {
+      return '<div class="key-point kp-research">' +
+        '<div class="kp-num" style="background:var(--gold)">' + (i+1) + '</div>' +
+        '<div class="kp-text"><div class="headline" style="font-weight:700">投研周报摘要</div>' +
+        '<div class="detail" style="line-height:1.8;max-height:none;font-size:13.5px">' + esc(it.detail) + '</div></div>' +
+        '<span class="kp-tag ' + tagClass + '">' + tagLabel + '</span></div>';
+    }
+    return '<div class="key-point">' +
+      '<div class="kp-num">' + (i+1) + '</div>' +
+      '<div class="kp-text"><div class="headline">' + esc(it.headline) + '</div>' +
+      '<div class="detail">' + esc(it.detail) + '</div></div>' +
+      '<span class="kp-tag ' + tagClass + '">' + tagLabel + '</span></div>';
+  }).join('');
+}
+
+// ===================== MACRO =====================
+function renderMacro(items) {
+  const el = document.getElementById('macro-grid');
+  if (!items.length) { el.innerHTML = emptyHTML('暂无宏观资讯'); return; }
+  el.innerHTML = items.map(it => articleCard(it)).join('');
+}
+
+function articleCard(it) {
+  const tagColors = {
+    '央行政策':'background:#e3f2fd;color:#1565c0',
+    'AI基建':'background:#f3e5f5;color:#7b1fa2',
+    '战后重建':'background:#fff3e0;color:#e65100',
+    '房屋翻新':'background:#e8f5e9;color:#2e7d32',
+    '企业扩产':'background:#e0f7fa;color:#00695c',
+    '财政刺激':'background:#fce4ec;color:#c62828',
+    '人口迁移':'background:#f1f8e9;color:#558b2f',
+    '能源转型':'background:#fff8e1;color:#f57f17',
+    '贸易壁垒':'background:#fbe9e7;color:#bf360c',
+    '地缘政治':'background:#ede7f6;color:#4527a0',
+  };
+  const style = tagColors[it.tag] || 'background:#eceff1;color:#455a64';
+  const impact = it.impact || 0;
+  const bars = [1,2,3,4,5].map(i => {
+    if (i <= impact) return '<span class="impact-high"></span>';
+    if (i <= impact + 1) return '<span class="impact-med"></span>';
+    return '<span class="impact-none"></span>';
+  }).join('');
+  const titleHtml = it.link
+    ? '<a href="' + esc(it.link) + '" target="_blank" style="color:inherit;text-decoration:none">' + esc(it.title) + '</a>'
+    : esc(it.title);
+  const sourceHtml = it.link
+    ? '<a href="' + esc(it.link) + '" target="_blank" class="source-link">' + esc(it.source||'来源') + ' ↗</a>'
+    : '<span class="source">' + esc(it.source||'') + '</span>';
+  return '<div class="article-card">' +
+    '<span class="card-tag" style="' + style + '">' + esc(it.tag||'资讯') + '</span>' +
+    '<h3>' + titleHtml + '</h3>' +
+    '<div class="card-body">' + esc(it.summary) + '</div>' +
+    '<div class="impact-bar">' + bars + '</div>' +
+    '<div class="card-footer">' + sourceHtml +
+    '<span>' + esc(it.date||'') + '</span></div></div>';
+}
+
+// ===================== REGIONAL (Demand-Driven) =====================
+function renderDemandView(demands) {
+  const el = document.getElementById('demand-grid');
+  if (!demands || !demands.length) { el.innerHTML = emptyHTML('暂无需求分析数据'); return; }
+
+  // Filter out demands with no countries
+  const active = demands.filter(d => d.country_count > 0);
+  if (!active.length) { el.innerHTML = emptyHTML('暂无需求分析数据'); return; }
+
+  el.innerHTML = active.map((d, i) => {
+    const sClass = d.total_strength >= 70 ? 'high' : d.total_strength >= 40 ? 'med' : 'low';
+    const countries = (d.countries || []).map(c => {
+      const csClass = c.strength >= 70 ? 'high' : c.strength >= 40 ? 'med' : 'low';
+      const metrics = Object.entries(c.metrics || {}).map(([lbl, val]) =>
+        '<span class="dc-metric"><span class="lbl">' + esc(lbl) + '</span><span class="val">' + esc(val) + '</span></span>'
+      ).join('');
+      return '<div class="dc-country">' +
+        '<div class="dc-country-head">' +
+          '<span class="dc-country-name">' + esc(c.name) + '<span class="region-tag">' + esc(c.region) + '</span></span>' +
+          '<div class="dc-strength"><div class="strength-bar" style="width:40px"><div class="strength-fill ' + csClass + '" style="width:' + c.strength + '%"></div></div>' +
+          '<span class="dc-strength-val ' + csClass + '">' + c.strength + '%</span></div>' +
+        '</div>' +
+        '<div class="dc-reason">' + esc(c.reason) + '</div>' +
+        (metrics ? '<div class="dc-metrics">' + metrics + '</div>' : '') +
+        '</div>';
+    }).join('');
+
+    return '<div class="demand-card" onclick="toggleDemand(this)">' +
+      '<div class="demand-head">' +
+        '<div class="demand-icon">' + esc(d.icon) + '</div>' +
+        '<div class="demand-info">' +
+          '<h3>' + esc(d.name) + '</h3>' +
+          '<p>' + esc(d.desc) + '</p>' +
+          '<div class="demand-meta">' +
+            '<div class="demand-strength">' +
+              '<div class="strength-bar"><div class="strength-fill ' + sClass + '" style="width:' + d.total_strength + '%"></div></div>' +
+              '<span>' + d.total_strength + '%</span>' +
+            '</div>' +
+            '<span class="demand-cnt">' + d.country_count + '个国家</span>' +
+            '<span class="demand-expand">点击展开 ↓</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="demand-detail"><div class="dc-countries">' + countries + '</div></div>' +
+    '</div>';
+  }).join('');
+}
+
+function toggleDemand(card) {
+  card.classList.toggle('expanded');
+  const arrow = card.querySelector('.demand-expand');
+  if (arrow) arrow.textContent = card.classList.contains('expanded') ? '收起 ↑' : '点击展开 ↓';
+}
+
+// Keep old functions for backward compatibility
+function renderRegional(data) {
+  // Fallback: if no demandView, render old regional view
+  const tabs = document.getElementById('region-tabs');
+  const grid = document.getElementById('country-grid');
+  if (!tabs || !grid) return;
+  const regions = Object.keys(data);
+  if (!regions.length) { grid.innerHTML = emptyHTML('暂无国别数据'); tabs.innerHTML = ''; return; }
+  tabs.innerHTML = regions.map((r, i) =>
+    '<div class="region-tab' + (i===0?' active':'') + '" onclick="switchRegion(this,\'' + r + '\')">' + esc(r) + '</div>'
+  ).join('');
+  renderCountries(data[regions[0]] || []);
+  window._regionalData = data;
+}
+
+function switchRegion(tab, region) {
+  document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  renderCountries(window._regionalData[region] || []);
+}
+
+function renderCountries(countries) {
+  const grid = document.getElementById('country-grid');
+  if (!grid) return;
+  grid.innerHTML = countries.map(c => {
+    const metrics = (c.metrics||[]).map(m => {
+      const chgClass = m.change > 0 ? 'up' : m.change < 0 ? 'down' : '';
+      const chgText = m.change > 0 ? '+' + m.change : m.change < 0 ? String(m.change) : '';
+      return '<div class="cc-metric"><div class="label">' + esc(m.label) + '</div>' +
+        '<div class="value">' + esc(m.value) +
+        (chgText ? '<span class="change ' + chgClass + '">' + chgText + '</span>' : '') +
+        '</div></div>';
+    }).join('');
+    return '<div class="country-card">' +
+      '<div class="cc-header"><span class="cc-name">' + esc(c.name) + '</span>' +
+      '<span class="cc-flag">' + (c.flag||'') + '</span></div>' +
+      (c.stale_since ? '<div style="font-size:10px;color:#c17d00;background:#fff8e6;padding:2px 6px;border-radius:3px;margin:4px 0;display:inline-block">数据回退自 ' + esc(c.stale_since.replace('week-','').replace('.json','')) + '</div>' : '') +
+      '<div class="cc-metrics">' + metrics + '</div>' +
+      (c.comment ? '<div class="cc-comment">' + esc(c.comment) + '</div>' : '') +
+      '</div>';
+  }).join('');
+}
+
+// ===================== TRENDS =====================
+function renderTrends(items) {
+  const el = document.getElementById('trend-list');
+  if (!items.length) { el.innerHTML = emptyHTML('暂无趋势数据'); return; }
+  el.innerHTML = items.map(it => {
+    const signals = (it.socialSignals||[]).map(s => {
+      const pct = Math.min(100, Math.max(0, s.growth||0));
+      return '<div class="social-signal">' +
+        '<span class="platform">' + esc(s.platform) + '</span>' +
+        '<div class="bar-bg"><div class="bar-fill" style="width:' + pct + '%"></div></div>' +
+        '<span class="pct">' + (s.growth>0?'+':'') + s.growth + '%</span></div>';
+    }).join('');
+    const drivers = (it.drivers||[]).map(d => '<span>' + esc(d) + '</span>').join('');
+    const satClass = (it.satisfaction||0) > 70 ? 'sat-high' : (it.satisfaction||0) > 40 ? 'sat-med' : 'sat-low';
+    const satLabel = (it.satisfaction||0) > 70 ? '供给充足' : (it.satisfaction||0) > 40 ? '部分满足' : '需求缺口';
+    return '<div class="trend-card">' +
+      '<div class="tc-left"><h3>' + esc(it.name) + '</h3>' +
+      '<div class="tc-desc">' + esc(it.description) + '</div>' +
+      '<div class="tc-drivers">' + drivers + '</div></div>' +
+      '<div class="tc-right">' + signals +
+      '<div class="tc-meta"><span class="sat ' + satClass + '">' + satLabel + ' ' + (it.satisfaction||0) + '%</span>' +
+      (it.category ? '<span>品类: ' + esc(it.category) + '</span>' : '') +
+      '</div></div></div>';
+  }).join('');
+}
+
+// ===================== SUPPLY CHAIN =====================
+function renderSupplyChain(items) {
+  const el = document.getElementById('sc-grid');
+  if (!items.length) { el.innerHTML = emptyHTML('暂无供应链数据'); return; }
+  el.innerHTML = items.map(it => {
+    const rows = (it.data||[]).map(r => {
+      const chgClass = r.change > 0 ? 'up' : r.change < 0 ? 'down' : '';
+      const chgText = r.change > 0 ? '+' + r.change + '%' : r.change < 0 ? r.change + '%' : '-';
+      return '<tr><td>' + esc(r.item) + '</td><td class="val">' + esc(r.value) + '</td>' +
+        '<td class="chg"><span class="change ' + chgClass + '">' + chgText + '</span></td></tr>';
+    }).join('');
+    return '<div class="sc-card"><h4>' + esc(it.title) + '</h4>' +
+      '<table class="sc-table"><tr><th>指标</th><th>数值</th><th>变动</th></tr>' + rows + '</table></div>';
+  }).join('');
+}
+
+// ===================== CUSTOMS DASHBOARD =====================
+function renderCustomsDashboard(data) {
+  const section = document.getElementById('customs-dashboard');
+  const el = document.getElementById('customs-dash-content');
+  if (!data || !data.categories || data.summary.total_usd === 0) {
+    section.style.display = 'none';
+    return;
+  }
+  section.style.display = '';
+
+  const fmtUSD = v => v >= 1e9 ? (v/1e9).toFixed(1) + 'B' : v >= 1e6 ? (v/1e6).toFixed(1) + 'M' : v >= 1e3 ? (v/1e3).toFixed(0) + 'K' : v.toFixed(0);
+  const fmtPct = v => v === null || v === undefined ? '-' : (v > 0 ? '+' : '') + v.toFixed(1) + '%';
+  const pctColor = v => v === null || v === undefined ? '#888' : v > 0 ? '#4caf50' : v < 0 ? '#f44336' : '#888';
+
+  let html = '';
+
+  // 期间与总览
+  html += '<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:16px">';
+  html += '<div class="ds-card" style="flex:1;min-width:200px"><h5>数据期间</h5><p style="font-size:20px;font-weight:700;margin:8px 0">' + esc(data.period) + '</p><p style="font-size:11px;color:#999">数据来源: ' + esc(data.data_source || 'UN Comtrade') + ' | 延迟: ' + esc(data.data_lag || '~3月') + '</p>' + (data.dashboard_built_at ? '<p style="font-size:10px;color:#aaa;margin-top:4px">本周构建: ' + esc((data.dashboard_built_at||'').slice(0,10)) + '</p>' : '') + '</div>';
+  html += '<div class="ds-card" style="flex:1;min-width:200px"><h5>出口总额</h5><p style="font-size:20px;font-weight:700;margin:8px 0">$' + fmtUSD(data.summary.total_usd) + '</p><p style="font-size:13px;color:' + pctColor(data.summary.total_yoy_pct) + '">同比 ' + fmtPct(data.summary.total_yoy_pct) + '</p></div>';
+  html += '<div class="ds-card" style="flex:1;min-width:200px"><h5>覆盖品类</h5><p style="font-size:20px;font-weight:700;margin:8px 0">' + data.summary.categories_count + '</p><p style="font-size:11px;color:#999">24大建材品类</p></div>';
+  html += '</div>';
+
+  // 品类排行
+  const cats = (data.categories || []).filter(c => c.value_usd > 0).sort((a,b) => b.value_usd - a.value_usd);
+  if (cats.length) {
+    html += '<h4 style="margin:16px 0 8px;font-size:14px">品类出口排行</h4>';
+    html += '<div style="overflow-x:auto"><table style="width:100%;font-size:12px;border-collapse:collapse">';
+    html += '<tr style="border-bottom:1px solid #333"><th style="text-align:left;padding:6px">品类</th><th style="text-align:right;padding:6px">出口额</th><th style="text-align:right;padding:6px">同比</th></tr>';
+    cats.slice(0, 15).forEach(c => {
+      html += '<tr style="border-bottom:1px solid #222"><td style="padding:6px">' + esc(c.name) + '</td><td style="text-align:right;padding:6px">$' + fmtUSD(c.value_usd) + '</td><td style="text-align:right;padding:6px;color:' + pctColor(c.yoy_pct) + '">' + fmtPct(c.yoy_pct) + '</td></tr>';
+    });
+    html += '</table></div>';
+  }
+
+  // 区域概览
+  const regs = (data.regions || []).filter(r => r.value_usd > 0).sort((a,b) => b.value_usd - a.value_usd);
+  if (regs.length) {
+    html += '<h4 style="margin:16px 0 8px;font-size:14px">区域出口分布</h4>';
+    html += '<div style="display:flex;gap:8px;flex-wrap:wrap">';
+    regs.forEach(r => {
+      html += '<div class="ds-card" style="flex:1;min-width:140px"><h5>' + esc(r.name) + '</h5><p style="font-size:16px;font-weight:600">$' + fmtUSD(r.value_usd) + '</p><p style="font-size:12px;color:' + pctColor(r.yoy_pct) + '">' + fmtPct(r.yoy_pct) + '</p>' + (r.top_growth_category ? '<p style="font-size:10px;color:#aaa">热门: ' + esc(r.top_growth_category) + '</p>' : '') + '</div>';
+    });
+    html += '</div>';
+  }
+
+  // 异常警报
+  if (data.alerts && data.alerts.length) {
+    html += '<h4 style="margin:16px 0 8px;font-size:14px;color:#f44336">异常警报</h4>';
+    html += data.alerts.map(a => '<div style="padding:8px;border-left:3px solid #f44336;margin-bottom:6px;font-size:12px">' + esc(a.text || a.message || JSON.stringify(a)) + '</div>').join('');
+  }
+
+  el.innerHTML = html;
+}
+
+// ===================== REGULATION =====================
+function renderRegulation(items) {
+  const el = document.getElementById('reg-list');
+  if (!items.length) { el.innerHTML = emptyHTML('暂无监管动态'); return; }
+  el.innerHTML = items.map(it => {
+    const t = it.type || it.tag || 'standard';
+    const iconClass = t === 'esg' ? 'reg-esg' : t === 'standard' ? 'reg-std' : 'reg-warn';
+    const icon = t === 'esg' ? 'E' : t === 'standard' ? 'S' : '!';
+    const tags = (it.tags||[]).map(t => '<span>' + esc(t) + '</span>').join('');
+    const sourceLabel = it.source ? '<span style="color:var(--accent-blue);font-weight:500">' + esc(it.source) + '</span>' : '';
+    const linkHtml = it.link ? '<a href="' + esc(it.link) + '" target="_blank" style="font-size:11px;margin-left:8px">详情</a>' : '';
+    return '<div class="reg-item">' +
+      '<div class="reg-icon ' + iconClass + '">' + icon + '</div>' +
+      '<div class="reg-content"><h4>' + esc(it.title) + '</h4>' +
+      '<p>' + esc((it.summary||'').substring(0,200)) + (it.summary && it.summary.length > 200 ? '...' : '') + '</p>' +
+      '<div class="reg-tags">' + sourceLabel + linkHtml + tags + '</div></div></div>';
+  }).join('');
+}
+
+// ===================== INNOVATION =====================
+function renderInnovation(items) {
+  const el = document.getElementById('inno-grid');
+  if (!items.length) { el.innerHTML = emptyHTML('暂无创新动态'); return; }
+  el.innerHTML = items.map(it => {
+    const stageGuess = (it.paper_count||0) >= 8 ? '商业化' : (it.paper_count||0) >= 4 ? '试点' : '研发';
+    const stageClass = stageGuess === '商业化' ? 'stage-commercial' : stageGuess === '试点' ? 'stage-pilot' : 'stage-lab';
+    const doiHtml = it.doi ? '<span class="doi"><a href="https://doi.org/' + esc(it.doi) + '" target="_blank">DOI</a></span>' : '';
+    // Use translated title, fallback to original
+    const title = it.title_zh || it.title || '';
+    // Technology direction
+    const direction = it.tech_direction || '';
+    const dirHtml = direction ? '<div class="tech-direction"><span class="td-label">技术方向</span>' + esc(direction) + '</div>' : '';
+    // Topic as primary badge
+    const topicLabel = it.topic || '';
+    return '<div class="inno-card">' +
+      '<span class="inno-stage ' + stageClass + '">' + esc(topicLabel) + ' · ' + stageGuess + '</span>' +
+      '<h4>' + esc(title) + '</h4>' +
+      dirHtml +
+      '<p>' + esc(it.summary) + '</p>' +
+      '<div class="inno-meta">' +
+      (it.paper_count ? '<span>' + it.paper_count + ' 篇论文</span>' : '') +
+      doiHtml +
+      '<span>' + esc(it.source||'') + '</span></div></div>';
+  }).join('');
+}
+
+// ===================== RESEARCH =====================
+function renderResearch(items, summary) {
+  const el = document.getElementById('research-list');
+  if (!items.length && !summary) { el.innerHTML = emptyHTML('暂无投研摘要'); return; }
+  const themeLabels = {commodities:'大宗商品',housing_market:'住房市场',infrastructure:'基础设施',
+    global_construction:'全球建造',green_finance:'绿色金融',trade:'贸易政策',
+    building_materials:'建材行业',real_estate:'房地产市场'};
+  let html = '';
+  // 投研周报摘要卡片 (放在最前面)
+  if (summary) {
+    html += '<div id="research-summary-block"><div class="research-summary-card">' +
+      '<div class="rs-header"><h3>本期投研摘要</h3></div>' +
+      '<div class="rs-body"><p>' + esc(summary) + '</p></div></div></div>';
+  }
+  // 研报列表
+  html += '<div id="research-items-block">' + items.map(it => {
+    const themeZh = themeLabels[it.theme] || it.theme || '综合';
+    const doiHtml = it.doi ? ' <a href="https://doi.org/' + esc(it.doi) + '" target="_blank" style="color:var(--accent-blue);font-size:11px">DOI</a>' : '';
+    return '<div class="research-item">' +
+      '<div class="ri-badge">' + esc(themeZh) + '</div>' +
+      '<div class="ri-content"><h4>' + esc(it.title) + '</h4>' +
+      '<p>' + esc(it.summary||'') + '</p>' +
+      '<div class="ri-meta">' +
+      '<span>' + esc(it.publisher||'') + '</span>' +
+      '<span>' + (it.year||'') + '</span>' +
+      (it.citations ? '<span class="citations">被引 ' + it.citations + '</span>' : '') +
+      doiHtml +
+      '</div></div></div>';
+  }).join('') + '</div>';
+  el.innerHTML = html;
+}
+
+// ===================== EMERGING DEMAND =====================
+function renderEmerging(items) {
+  const el = document.getElementById('emerging-list');
+  if (!items.length) { el.innerHTML = emptyHTML('暂无新兴需求信号'); return; }
+  el.innerHTML = items.map(it => {
+    const strength = it.strength || 'weak';
+    const strengthLabel = {strong:'强信号',medium:'中信号',weak:'弱信号'}[strength] || '弱信号';
+    const signals = (it.signal_types||[]).map(s => '<span>' + esc(s) + '</span>').join('');
+    const articles = (it.example_articles||[]).map(a =>
+      '<div class="em-article"><span>' + esc(a.title||'').substring(0,60) + (a.title&&a.title.length>60?'...':'') + '</span><span class="em-src">' + esc(a.source||'') + '</span></div>'
+    ).join('');
+    return '<div class="emerging-card ' + strength + '">' +
+      '<h4>' + esc(it.name) + '</h4>' +
+      '<span class="em-strength s-' + strength + '">' + strengthLabel + ' (x' + (it.signal_count||0) + ')</span>' +
+      '<p>' + esc(it.description||'') + '</p>' +
+      (signals ? '<div class="em-signals">' + signals + '</div>' : '') +
+      (articles ? '<div class="em-articles">' + articles + '</div>' : '') +
+      '</div>';
+  }).join('');
+}
+
+// ===================== CATEGORY EXPLORER =====================
+function renderCategoryExplorer() {
+  const cats = TAXONOMY.categories || {};
+  const list = document.getElementById('cat-l2-list');
+  const entries = Object.entries(cats).sort((a,b) => a[1].zh.localeCompare(b[1].zh,'zh'));
+  window._catEntries = entries;
+
+  // Render weekly insights into dedicated container above search box
+  var insightsContainer = document.getElementById('weekly-insights-container');
+  if (insightsContainer) {
+    insightsContainer.innerHTML = renderWeeklyInsights();
+  }
+
+  // Category list stays clean - just the items
+  list.innerHTML = entries.map(([key, val]) => {
+    const total = (val.l3||[]).length + (val.hs_codes||[]).length;
+    return '<div class="cat-l2-item" data-key="' + esc(key) + '" onclick="selectCategory(this,\'' + esc(key) + '\')">' +
+      '<span>' + esc(val.zh) + (val.en ? ' <small style="color:#999">' + esc(val.en) + '</small>' : '') + '</span>' +
+      '<span class="count">' + (val.l3||[]).length + '+' + (val.hs_codes||[]).length + '</span></div>';
+  }).join('');
+}
+
+window._viewedCategories = new Set();
+function selectCategory(el, key) {
+  document.querySelectorAll('.cat-l2-item').forEach(i => i.classList.remove('active'));
+  el.classList.add('active');
+  window._viewedCategories.add(key);
+  const cat = (TAXONOMY.categories||{})[key];
+  if (!cat) return;
+  const detail = document.getElementById('cat-detail');
+  // Render basic info immediately
+  const l3html = (cat.l3||[]).map(l =>
+    '<div class="cat-l3-item"><div class="l3zh">' + esc(l.zh) + '</div>' +
+    '<div class="l3en">' + esc(l.en) + '</div></div>'
+  ).join('');
+  const hshtml = (cat.hs_codes||[]).length ?
+    '<div class="cat-hs"><h4>海关HS编码</h4><div class="hs-tags">' +
+    cat.hs_codes.map(c => '<span class="hs-tag">' + esc(c) + '</span>').join('') +
+    '</div></div>' : '';
+  const kwHtml = (cat.keywords_cn||cat.keywords_en||[]).length ?
+    '<div class="cd-kw-badges">' + (cat.keywords_cn||cat.keywords_en||[]).slice(0,6).map(
+      k => '<span class="cd-kw-badge">' + esc(k) + '</span>').join('') + '</div>' : '';
+  detail.innerHTML = '<h3>' + esc(cat.zh) + '</h3>' +
+    '<div class="cat-en">' + esc(cat.en||'') + ' | 三级品类: ' + (cat.l3||[]).length + ' | HS编码: ' + (cat.hs_codes||[]).length +
+    '<button onclick="exportSingleCategory(\'' + esc(key) + '\')" style="margin-left:12px;padding:4px 14px;background:var(--accent-blue,#2980b9);color:#fff;border:none;border-radius:5px;font-size:12px;cursor:pointer;font-weight:600">导出此品类 PDF</button></div>' +
+    kwHtml +
+    (l3html ? '<div class="cat-l3-grid">' + l3html + '</div>' : '<p style="color:#999;font-size:13px">暂无三级品类数据</p>') +
+    hshtml;
+  // Fetch rich data if slug exists
+  if (cat.l2_slug) {
+    var richDiv = document.createElement('div');
+    richDiv.innerHTML = '<div class="cd-loading">Loading rich data...</div>';
+    detail.appendChild(richDiv);
+    fetch('data/categories/五金工具/' + cat.l2_slug + '.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(d => { if (d) renderRichDetail(richDiv, d); else richDiv.innerHTML = ''; })
+      .catch(() => { richDiv.innerHTML = ''; });
+  }
+}
+
+function renderRichDetail(container, d) {
+  var html = '';
+  // 1. Dynamic Insight
+  if (d.dynamic_insight) html += renderDynamicInsight(d.dynamic_insight);
+  // 2. Export Data
+  if (d.export_data && d.export_data.length) html += renderExportData(d.export_data);
+  // 3. Industry Analysis
+  if (d.industry_analysis) html += renderIndustryAnalysis(d.industry_analysis);
+  // 4. Compliance
+  if (d.compliance_detail) html += renderCompliance(d.compliance_detail);
+  // 5. Demand Scenarios
+  if (d.demand_scenarios) html += renderDemandScenarios(d.demand_scenarios);
+  // 6. Footer
+  if (d.last_updated) {
+    html += '<div style="margin-top:20px;font-size:11px;color:var(--text-light);text-align:right">';
+    html += '数据更新: ' + esc(d.last_updated);
+    if (d.data_source) html += ' | ' + esc(d.data_source);
+    html += '</div>';
+  }
+  container.innerHTML = html;
+}
+
+function renderDynamicInsight(ins) {
+  var html = '<div class="cd-section">';
+  // Trend Summary
+  if (ins.trend_summary) {
+    html += '<div class="cd-title">趋势聚焦</div>';
+    html += '<div class="cd-trend-summary">' + esc(ins.trend_summary) + '</div>';
+  }
+  // Product Profile
+  if (ins.product_profile) {
+    html += '<div class="cd-title" style="margin-top:16px">产品画像</div>';
+    html += '<div class="cd-profile-grid">';
+    var fields = [
+      {k:'外观',c:'#c9a84c'},{k:'成分',c:'#5cf2bd'},{k:'工艺',c:'#e8d49b'},
+      {k:'色彩',c:'#a78bff'},{k:'包装',c:'#7fdcff'},{k:'技术趋势',c:'#3eecae'}
+    ];
+    for (var i=0; i<fields.length; i++) {
+      var v = ins.product_profile[fields[i].k];
+      if (v) {
+        html += '<div class="cd-profile-card" style="border-top:2px solid ' + fields[i].c + '">';
+        html += '<div class="label" style="color:' + fields[i].c + '">' + fields[i].k + '</div>';
+        html += '<div class="value">' + esc(v) + '</div></div>';
+      }
+    }
+    html += '</div>';
+  }
+  // Reasons
+  if (ins.reasons && ins.reasons.length) {
+    html += '<div class="cd-title" style="margin-top:16px">驱动力</div>';
+    html += '<ul class="cd-reasons">';
+    for (var i=0; i<ins.reasons.length; i++) {
+      html += '<li>' + esc(ins.reasons[i]) + '</li>';
+    }
+    html += '</ul>';
+  }
+  // Signals
+  if (ins.signals && ins.signals.length) {
+    html += '<div class="cd-title" style="margin-top:16px">市场信号</div>';
+    html += '<div class="cd-signals">';
+    var dimClass = {'海外社媒':'social','搜索':'search','媒体':'media','Amazon':'amazon'};
+    for (var i=0; i<Math.min(ins.signals.length, 12); i++) {
+      var s = ins.signals[i];
+      var cls = dimClass[s.dim] || 'search';
+      var label = '';
+      if (s.dim === '媒体') label = (s.source||'') + ': ' + (s.title||'').substring(0,36);
+      else if (s.dim === 'Amazon') label = (s.market||'') + ' #' + (s.rank||'') + ' ' + (s.title||'').substring(0,24);
+      else label = (s.kw||'') + (s.growth ? ' +' + s.growth + '%' : '');
+      if (s.url) html += '<a class="cd-signal ' + cls + '" href="' + esc(s.url) + '" target="_blank">' + esc(label) + '</a>';
+      else html += '<span class="cd-signal ' + cls + '">' + esc(label) + '</span>';
+    }
+    html += '</div>';
+  }
+  html += '</div>';
+  return html;
+}
+
+function renderExportData(exports) {
+  var html = '<div class="cd-section">';
+  html += '<div class="cd-title">出口数据 (亿美元)</div>';
+  html += '<div class="cd-export-grid">';
+  for (var i=0; i<exports.length; i++) {
+    var e = exports[i];
+    html += '<div class="cd-export-card">';
+    html += '<div class="hs">HS ' + esc(e.hs_code||'') + ' - ' + esc(e.name||'') + '</div>';
+    if (e.data) {
+      for (var j=0; j<e.data.length; j++) {
+        var yr = e.data[j];
+        var yoyCls = (yr.yoy||0) >= 0 ? 'yoy-up' : 'yoy-dn';
+        var yoyStr = (yr.yoy||0) >= 0 ? '+' + yr.yoy + '%' : yr.yoy + '%';
+        html += '<div class="yr-row"><span>' + esc(yr.yr) + '</span>';
+        html += '<span class="amt">' + (yr.amt||0) + '</span>';
+        html += '<span class="' + yoyCls + '">' + yoyStr + '</span></div>';
+      }
+    }
+    if (e.top5 && e.top5.length) {
+      html += '<div class="cd-top5">';
+      for (var k=0; k<Math.min(e.top5.length, 5); k++) {
+        var t = e.top5[k];
+        html += '<div class="cd-top5-row"><span>' + esc(t.c) + '</span>';
+        html += '<span>' + t.amt + (t.yoy ? ' (' + (t.yoy>=0?'+':'') + t.yoy + '%)' : '') + '</span></div>';
+      }
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+  html += '</div></div>';
+  return html;
+}
+
+function renderIndustryAnalysis(ia) {
+  var dims = [
+    {k:'culture',zh:'文化因素',c:'#c9a84c'},
+    {k:'consumer',zh:'消费趋势',c:'#e74c3c'},
+    {k:'infra',zh:'基础设施',c:'#2980b9'},
+    {k:'population',zh:'人口结构',c:'#27ae60'},
+    {k:'social',zh:'社会法规',c:'#8e44ad'},
+    {k:'environment',zh:'环境因素',c:'#16a085'},
+    {k:'opportunity',zh:'机会点',c:'#f39c12'}
+  ];
+  var html = '<div class="cd-section">';
+  html += '<div class="cd-title">行业分析 (7维度)</div>';
+  html += '<div class="cd-analysis-grid">';
+  for (var i=0; i<dims.length; i++) {
+    var v = ia[dims[i].k];
+    if (v) {
+      html += '<div class="cd-analysis-card" style="border-left-color:' + dims[i].c + '">';
+      html += '<div class="dim-label" style="color:' + dims[i].c + '">' + dims[i].zh + '</div>';
+      html += '<div class="dim-text">' + esc(v) + '</div></div>';
+    }
+  }
+  html += '</div></div>';
+  return html;
+}
+
+function renderCompliance(comp) {
+  var markets = {'US':'美国','EU':'欧盟','JP':'日本','AU':'澳大利亚'};
+  var html = '<div class="cd-section">';
+  html += '<div class="cd-title">合规要求</div>';
+  html += '<div class="cd-compliance-grid">';
+  var keys = Object.keys(comp);
+  for (var i=0; i<keys.length; i++) {
+    var mk = keys[i];
+    var m = comp[mk];
+    if (!m || typeof m !== 'object') continue;
+    html += '<div class="cd-compliance-card">';
+    html += '<div class="mkt">' + (markets[mk]||mk) + '</div>';
+    if (m.cert) html += '<div class="row"><b>认证: </b>' + esc(Array.isArray(m.cert)?m.cert.join(', '):m.cert) + '</div>';
+    if (m.std) html += '<div class="row"><b>标准: </b>' + esc(Array.isArray(m.std)?m.std.join(', '):m.std) + '</div>';
+    if (m.label) html += '<div class="row"><b>标签: </b>' + esc(Array.isArray(m.label)?m.label.join(', '):m.label) + '</div>';
+    if (m.customs) html += '<div class="row"><b>通关: </b>' + esc(m.customs) + '</div>';
+    html += '</div>';
+  }
+  html += '</div></div>';
+  return html;
+}
+
+function renderDemandScenarios(ds) {
+  var html = '<div class="cd-section">';
+  html += '<div class="cd-title">需求场景</div>';
+  if (ds.scenes && ds.scenes.length) {
+    html += '<div class="cd-demand-grid">';
+    for (var i=0; i<ds.scenes.length; i++) {
+      var s = ds.scenes[i];
+      html += '<div class="cd-demand-card">';
+      html += '<div class="scene">' + esc(s.scene||'') + '</div>';
+      if (s.crowd) html += '<div class="crowd">' + esc(s.crowd) + '</div>';
+      if (s.reason) html += '<div class="reason">' + esc(s.reason) + '</div>';
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+  // Product specs
+  if (ds.products) {
+    var p = ds.products;
+    if (p.cert && p.cert.length) {
+      html += '<div style="margin-top:12px"><div class="cd-title" style="font-size:12px">产品认证要求</div>';
+      html += '<div class="hs-tags" style="margin-top:6px">';
+      for (var i=0; i<p.cert.length; i++) html += '<span class="hs-tag">' + esc(p.cert[i]) + '</span>';
+      html += '</div></div>';
+    }
+    if (p.priceRange) {
+      html += '<div style="margin-top:12px"><div class="cd-title" style="font-size:12px">价格区间</div>';
+      var prKeys = Object.keys(p.priceRange);
+      for (var i=0; i<prKeys.length; i++) {
+        html += '<span style="font-size:12px;margin-right:12px;color:var(--text)">' + esc(prKeys[i]) + ': <b>' + esc(p.priceRange[prKeys[i]]) + '</b></span>';
+      }
+      html += '</div>';
+    }
+  }
+  html += '</div>';
+  return html;
+}
+
+function filterCategories() {
+  const query = document.getElementById('cat-search-input').value.toLowerCase();
+  const filter = document.getElementById('cat-filter').value;
+  const entries = window._catEntries || [];
+  const items = document.querySelectorAll('.cat-l2-item');
+  items.forEach(item => {
+    const key = item.dataset.key;
+    const cat = (TAXONOMY.categories||{})[key];
+    if (!cat) return;
+    let match = true;
+    if (query) {
+      const searchStr = (cat.zh + ' ' + cat.en + ' ' + (cat.hs_codes||[]).join(' ') +
+        ' ' + (cat.l3||[]).map(l=>l.zh+' '+l.en).join(' ')).toLowerCase();
+      match = searchStr.includes(query);
+    }
+    if (filter === 'hs' && !(cat.hs_codes||[]).length) match = false;
+    item.style.display = match ? '' : 'none';
+  });
+}
+
+// ===================== EVENTS =====================
+function renderEvents(items) {
+  const el = document.getElementById('events-list');
+  if (!items.length) { el.innerHTML = emptyHTML('暂无近期事件'); return; }
+  const impColors = {high:'border-left:4px solid var(--accent-red)',medium:'border-left:4px solid var(--accent-orange)',low:''};
+  el.innerHTML = items.map(it => {
+    const title = it.title || it.name || '';
+    const d = new Date(it.date);
+    const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    const tags = (it.tags||it.categories||[]).map(t => '<span>' + esc(t) + '</span>').join('');
+    const impStyle = impColors[it.importance] || '';
+    const daysLabel = it.days_away != null ? (it.days_away === 0 ? '今天' : it.days_away + ' 天后') : '';
+    const locationLabel = it.location ? ' · ' + esc(it.location) : '';
+    const desc = it.description || (it.type === 'central_bank' ? '央行利率决议' : '') + locationLabel;
+    return '<div class="event-item" style="' + impStyle + '">' +
+      '<div class="event-date"><div class="month">' + (isNaN(d.getTime()) ? '' : months[d.getMonth()]) + '</div>' +
+      '<div class="day">' + (isNaN(d.getTime()) ? '' : d.getDate()) + '</div></div>' +
+      '<div class="event-info"><h4>' + esc(title) + '</h4>' +
+      '<p>' + esc(desc) + (daysLabel ? ' <span style="color:var(--gold);font-weight:600">(' + daysLabel + ')</span>' : '') + '</p>' +
+      '<div class="event-tags">' + tags + '</div></div></div>';
+  }).join('');
+}
+
+// ===================== DATA SOURCES =====================
+function renderDataSources(items) {
+  const el = document.getElementById('ds-grid');
+  if (!items.length) {
+    el.innerHTML = renderDefaultSources();
+    return;
+  }
+  // 新格式: {name, status, count, detail}
+  const statusDot = s => s === 'ok' ? '🟢' : s === 'partial' || s === 'skipped' ? '🟡' : '🔴';
+  const statusLabel = s => s === 'ok' ? '正常' : s === 'partial' ? '部分' : s === 'skipped' ? '跳过' : '失败';
+  const okCount = items.filter(i => i.status === 'ok').length;
+  const totalCount = items.length;
+  let html = '<div style="margin-bottom:12px;font-size:13px;color:#aaa">本期数据采集状态: ' +
+    okCount + '/' + totalCount + ' 数据源正常</div>';
+  html += items.map(it => {
+    const dot = statusDot(it.status);
+    const label = statusLabel(it.status);
+    const detail = it.detail || (it.count ? it.count + ' 条' : '');
+    return '<div class="ds-card">' +
+      '<h5>' + dot + ' ' + esc(it.name) + '</h5>' +
+      '<span class="ds-type ' + (it.status === 'ok' ? 'ds-auto' : it.status === 'skipped' ? 'ds-semi' : 'ds-manual') + '">' + label + '</span>' +
+      (detail ? '<p>' + esc(detail) + '</p>' : '') +
+      '</div>';
+  }).join('');
+  el.innerHTML = html;
+}
+
+function renderDefaultSources() {
+  const sources = [
+    {name:'FRED 央行利率',type:'auto',desc:'Fed/ECB/BOJ/PBOC等利率决议'},
+    {name:'World Bank 国别指标',type:'auto',desc:'全球25+国家宏观经济数据'},
+    {name:'UN Comtrade',type:'auto',desc:'全球贸易流数据、HS编码进出口统计'},
+    {name:'海关月度出口',type:'auto',desc:'24品类×207 HS编码×9区域68国'},
+    {name:'SCFI/BDI 海运指数',type:'auto',desc:'集装箱运价、干散货指数'},
+    {name:'RSS 新闻聚合',type:'auto',desc:'9源建材行业新闻实时聚合'},
+    {name:'学术论文',type:'auto',desc:'Crossref/arXiv/DOAJ多主题'},
+    {name:'投研报告',type:'auto',desc:'全球建材投研报告聚合'},
+    {name:'展会/事件日历',type:'auto',desc:'全球建材行业展会追踪'},
+    {name:'EUR-Lex 欧盟法规',type:'auto',desc:'欧盟建材相关法规监控'},
+    {name:'新兴需求探测',type:'auto',desc:'交叉分析新闻+社交信号'},
+    {name:'Google Trends',type:'auto',desc:'建材搜索关键词趋势'}
+  ];
+  return sources.map(s => {
+    const typeClass = s.type === 'auto' ? 'ds-auto' : s.type === 'semi' ? 'ds-semi' : 'ds-manual';
+    const typeLabel = s.type === 'auto' ? '自动化' : s.type === 'semi' ? '半自动' : '人工';
+    return '<div class="ds-card"><h5>' + s.name + '</h5>' +
+      '<span class="ds-type ' + typeClass + '">' + typeLabel + '</span>' +
+      '<p>' + s.desc + '</p></div>';
+  }).join('');
+}
+
+// ===================== FX RATES =====================
+const FX_PAIRS = [
+  {code:'USD', name:'美元', flag:'🇺🇸', precision:4},
+  {code:'EUR', name:'欧元', flag:'🇪🇺', precision:4},
+  {code:'JPY', name:'日元', flag:'🇯🇵', precision:6, scale:100, scaleLabel:'/ 100'},
+  {code:'GBP', name:'英镑', flag:'🇬🇧', precision:4},
+  {code:'AUD', name:'澳元', flag:'🇦🇺', precision:4},
+  {code:'SGD', name:'新加坡元', flag:'🇸🇬', precision:4},
+  {code:'CAD', name:'加元', flag:'🇨🇦', precision:4},
+  {code:'CHF', name:'瑞郎', flag:'🇨🇭', precision:4}
+];
+let _fxLastRates = {};      // previous successful rates for delta calc
+let _fxRefreshTimer = null;
+const FX_REFRESH_MS = 10 * 60 * 1000;
+
+async function fetchFXFromSource(srcName, url, parser) {
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), 8000);
+    const res = await fetch(url, {signal: ctrl.signal});
+    clearTimeout(timer);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const j = await res.json();
+    const rates = parser(j);
+    if (!rates || !rates.USD || !rates.EUR) throw new Error('rates missing');
+    return {source: srcName, rates: rates, ts: Date.now()};
+  } catch (e) {
+    console.warn('[FX]', srcName, 'failed:', e.message);
+    return null;
+  }
+}
+
+async function fetchFXRates() {
+  // Try sources sequentially; each returns CNY rate vs base unit (1 unit foreign = X CNY).
+  // Source 1: exchangerate.host (free, no key, base=CNY then invert OR base=foreign)
+  let result = await fetchFXFromSource(
+    'exchangerate.host',
+    'https://api.exchangerate.host/latest?base=CNY&symbols=USD,EUR,JPY,GBP,AUD,SGD,CAD,CHF',
+    j => {
+      if (!j || !j.rates) return null;
+      const out = {};
+      Object.keys(j.rates).forEach(k => {
+        const r = j.rates[k];
+        if (r && isFinite(r) && r > 0) out[k] = 1 / r;  // CNY per 1 foreign
+      });
+      return out;
+    }
+  );
+  // Source 2: open.er-api.com (free, no key)
+  if (!result) {
+    result = await fetchFXFromSource(
+      'open.er-api.com',
+      'https://open.er-api.com/v6/latest/CNY',
+      j => {
+        if (!j || !j.rates) return null;
+        const out = {};
+        ['USD','EUR','JPY','GBP','AUD','SGD','CAD','CHF'].forEach(k => {
+          const r = j.rates[k];
+          if (r && isFinite(r) && r > 0) out[k] = 1 / r;
+        });
+        return out;
+      }
+    );
+  }
+  // Source 3: frankfurter.app (free, ECB-based)
+  if (!result) {
+    result = await fetchFXFromSource(
+      'frankfurter.app',
+      'https://api.frankfurter.app/latest?from=CNY&to=USD,EUR,JPY,GBP,AUD,SGD,CAD,CHF',
+      j => {
+        if (!j || !j.rates) return null;
+        const out = {};
+        Object.keys(j.rates).forEach(k => {
+          const r = j.rates[k];
+          if (r && isFinite(r) && r > 0) out[k] = 1 / r;
+        });
+        return out;
+      }
+    );
+  }
+  return result;
+}
+
+function formatFXTime(ts) {
+  if (!ts) return '';
+  const d = new Date(ts);
+  const pad = n => String(n).padStart(2,'0');
+  return d.getFullYear() + '-' + pad(d.getMonth()+1) + '-' + pad(d.getDate()) +
+    ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
+}
+
+function renderFXLoading() {
+  const grid = document.getElementById('fx-grid');
+  if (!grid) return;
+  grid.innerHTML = FX_PAIRS.map(p =>
+    '<div class="fx-card fx-loading">' +
+      '<div class="fx-pair"><span class="fx-flag">' + p.flag + '</span>' + p.code + '/CNY · ' + p.name + '</div>' +
+      '<div class="fx-rate">— <small>CNY</small></div>' +
+      '<div class="fx-source">加载中…</div>' +
+    '</div>'
+  ).join('');
+}
+
+function renderFXRates(rates, source, ts) {
+  const grid = document.getElementById('fx-grid');
+  if (!grid) return;
+  grid.innerHTML = FX_PAIRS.map(p => {
+    const r = rates[p.code];
+    if (r == null || !isFinite(r)) {
+      return '<div class="fx-card fx-error">' +
+        '<div class="fx-pair"><span class="fx-flag">' + p.flag + '</span>' + p.code + '/CNY · ' + p.name + '</div>' +
+        '<div class="fx-rate">N/A</div>' +
+        '<div class="fx-source">数据缺失</div>' +
+      '</div>';
+    }
+    const scale = p.scale || 1;
+    const display = r * scale;
+    const rateStr = display.toFixed(p.precision);
+    const scaleLabel = p.scaleLabel ? '<small>CNY ' + p.scaleLabel + '</small>' : '<small>CNY</small>';
+    let changeHTML = '';
+    const prev = _fxLastRates[p.code];
+    if (prev != null && isFinite(prev) && prev > 0) {
+      const diff = r - prev;
+      const pct = (diff / prev) * 100;
+      const cls = diff > 0.00001 ? 'up' : diff < -0.00001 ? 'down' : 'flat';
+      const arrow = cls === 'up' ? '▲' : cls === 'down' ? '▼' : '—';
+      changeHTML = '<div class="fx-change ' + cls + '">' + arrow + ' ' +
+        (diff>0?'+':'') + (diff*scale).toFixed(p.precision) + ' (' +
+        (pct>0?'+':'') + pct.toFixed(3) + '%)</div>';
+    }
+    return '<div class="fx-card">' +
+      '<div class="fx-pair"><span class="fx-flag">' + p.flag + '</span>' + p.code + '/CNY · ' + p.name + '</div>' +
+      '<div class="fx-rate">' + rateStr + ' ' + scaleLabel + '</div>' +
+      changeHTML +
+      '<div class="fx-source">来源: ' + esc(source) + '</div>' +
+    '</div>';
+  }).join('');
+  const meta = document.getElementById('fx-meta');
+  if (meta) {
+    meta.innerHTML = '<span class="fx-status-ok">● 已更新</span> · ' +
+      formatFXTime(ts) + ' · 数据源: ' + esc(source) + ' · 自动刷新间隔 10 分钟';
+  }
+}
+
+function renderFXError(msg) {
+  const grid = document.getElementById('fx-grid');
+  if (!grid) return;
+  grid.innerHTML = FX_PAIRS.map(p =>
+    '<div class="fx-card fx-error">' +
+      '<div class="fx-pair"><span class="fx-flag">' + p.flag + '</span>' + p.code + '/CNY · ' + p.name + '</div>' +
+      '<div class="fx-rate">— <small>CNY</small></div>' +
+      '<div class="fx-source">抓取失败</div>' +
+    '</div>'
+  ).join('');
+  const meta = document.getElementById('fx-meta');
+  if (meta) {
+    meta.innerHTML = '<span class="fx-status-err">● 抓取失败</span> · ' + esc(msg || '所有数据源不可达，请稍后再试') + ' · 点击右侧按钮重试';
+  }
+}
+
+async function refreshFXRates(manual) {
+  const btn = document.querySelector('.fx-refresh');
+  if (manual && btn) { btn.disabled = true; btn.textContent = '刷新中…'; }
+  if (!Object.keys(_fxLastRates).length) renderFXLoading();
+  const meta = document.getElementById('fx-meta');
+  if (meta && !Object.keys(_fxLastRates).length) {
+    meta.innerHTML = '<span class="fx-status-warn">● 加载中</span> · 正在尝试多个数据源…';
+  }
+  try {
+    const result = await fetchFXRates();
+    if (!result) {
+      renderFXError('exchangerate.host / open.er-api.com / frankfurter.app 均不可达');
+      return;
+    }
+    renderFXRates(result.rates, result.source, result.ts);
+    // Save for next delta computation
+    _fxLastRates = Object.assign({}, result.rates);
+  } catch (e) {
+    renderFXError(e.message);
+  } finally {
+    if (manual && btn) { btn.disabled = false; btn.textContent = '立即刷新'; }
+  }
+}
+
+function startFXAutoRefresh() {
+  if (_fxRefreshTimer) clearInterval(_fxRefreshTimer);
+  _fxRefreshTimer = setInterval(() => refreshFXRates(false), FX_REFRESH_MS);
+}
+
+// ===================== NAVIGATION =====================
+function setupNavigation() {
+  const links = document.querySelectorAll('.sidebar-nav a');
+  const sections = [...links].map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector('.sidebar-nav a[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-80px 0px -60% 0px' });
+  sections.forEach(s => observer.observe(s));
+}
+
+function refreshData() { init(); }
+
+// ===================== HELPERS =====================
+function esc(s) { if (s==null) return ''; const d=document.createElement('div'); d.textContent=String(s); return d.innerHTML; }
+function emptyHTML(msg) { return '<div class="empty-state"><p>' + esc(msg) + '</p></div>'; }
+
+// ===================== EMBEDDED FALLBACK DATA =====================
+function getEmbeddedData() {
+  return {
+    issue: 1,
+    date: '2025-06-15',
+    title: '五金工具行业全球资讯期刊',
+    tagline: 'Global Hardware Tools Weekly Intelligence Report',
+    coverage: '30+ 国家 | 25 品类 | 180+ HS编码',
+    sources: '16+ 数据源',
+    keyTakeaways: [
+      {headline:'美联储降息预期升温，北美DIY市场Q3需求回暖',detail:'利率下行带动房屋翻新融资成本降低，电动工具和手动工具零售渠道库存去化加速',tag:'opportunity'},
+      {headline:'欧盟新电池法规(EU Battery Regulation)正式实施',detail:'锂电工具需满足碳足迹声明和回收率要求，中国出口企业合规成本上升15-20%',tag:'risk'},
+      {headline:'东南亚制造业转移加速，越南/印尼工业工具采购量同比增长35%',detail:'电子组装、汽车零部件工厂扩建带动气动工具、精密测量仪器需求',tag:'opportunity'},
+      {headline:'中国钢材价格企稳回升，手工具原材料成本压力缓解',detail:'热轧卷板价格环比上涨3.2%，但高端合金钢仍依赖进口，影响专业级工具利润率',tag:'watch'},
+      {headline:'无刷电机(BLDC)工具渗透率突破40%，智能扭矩扳手搜索量激增120%',detail:'专业承包商和DIY用户对高精度、长寿命工具需求强烈，建议关注IoT连接工具赛道',tag:'opportunity'}
+    ],
+    macro: [
+      {tag:'央行政策',title:'美联储6月议息：维持5.25-5.50%不变，点阵图暗示年内降息一次',summary:'鲍威尔表示劳动力市场降温为降息提供空间。30年期美债收益率下行至4.35%，降低DIY工具消费信贷成本。Home Depot和Lowe\'s融资压力缓解，Q3采购预算上调。',source:'Federal Reserve',date:'2025-06-12',impact:4},
+      {tag:'央行政策',title:'欧央行6月如期降息25bp至3.50%，利好欧洲建筑承包商工具采购',summary:'拉加德表示欧元区经济增长仍疲软但通胀接近目标。德国和法国建筑承包商融资成本边际改善，专业级电动工具需求有望在Q3回升。',source:'ECB',date:'2025-06-06',impact:3},
+      {tag:'AI基建',title:'全球AI数据中心建设潮带动精密工具需求：2025年资本开支突破$3200亿',summary:'微软、谷歌、亚马逊等科技巨头持续加码数据中心建设。对高精度扭矩扳手、激光水平仪、电缆压接工具等专业级工具需求拉动显著。北美和东南亚为主要建设区域。',source:'Goldman Sachs Research',date:'2025-06-10',impact:5},
+      {tag:'战后重建',title:'乌克兰重建基金规模达$850亿，手工具和电动工具成为首批急需物资',summary:'涵盖道路、桥梁、住宅重建。手动工具套装、电钻、角磨机、焊接设备需求集中释放。波兰和土耳其成为主要中转供应国。',source:'World Bank',date:'2025-06-08',impact:4},
+      {tag:'房屋翻新',title:'美国成屋库存降至历史低位，DIY工具租赁和二手交易市场活跃',summary:'NAR数据显示成屋可售月数仅3.2个月，大量房主选择自行翻新。Home Depot工具租赁业务增长25%，电钻、锯类、砂光机为热门品类。',source:'NAR / Home Depot',date:'2025-06-11',impact:3},
+      {tag:'财政刺激',title:'印度宣布$1500亿国家基建管道(NIP)年度拨款，工业工具内需激增',summary:'莫迪政府加速公路、铁路、机场建设。气动工具、液压千斤顶、重型扳手、测量仪器需求预计增长15-20%。印度成为全球工具需求增速最快的主要经济体。',source:'印度财政部',date:'2025-06-05',impact:5},
+      {tag:'能源转型',title:'全球锂电工具市场年增速超25%，欧盟新电池法规重塑供应链',summary:'中国"双碳"目标、欧洲RePowerEU计划、美国IRA税收抵免共同推动无绳化工具普及。锂电钻、锂电角磨机、锂电链锯等品类需求快速增长，但需满足EU Battery Regulation碳足迹要求。',source:'IEA / Bloomberg NEF',date:'2025-06-09',impact:4},
+      {tag:'贸易壁垒',title:'美国对华钢制手工具反倾销税复审终裁税率升至42.3%',summary:'涵盖扳手、钳子、螺丝刀等HS8203/8204系列产品。中国手工具出口美国渠道受阻，部分企业转向越南和墨西哥设厂组装。',source:'US DOC',date:'2025-06-07',impact:3}
+    ],
+    regional: {
+      '亚太': [
+        {name:'中国',flag:'',metrics:[
+          {label:'GDP增速',value:'4.8%',change:-0.2},{label:'工具出口额',value:'$385亿',change:5.2},
+          {label:'电动工具产量',value:'2.1亿台',change:8.5},{label:'手工具出口量',value:'15.6亿件',change:3.1},
+          {label:'锂电工具渗透率',value:'42%',change:6.8},{label:'行业PMI',value:'51.5',change:0.5}
+        ],comment:'五金工具出口保持增长，锂电工具和智能测量仪器成为新增长点。长三角和珠三角产业集群加速向高端化转型，无刷电机工具产能扩张明显。'},
+        {name:'印度',flag:'',metrics:[
+          {label:'GDP增速',value:'7.2%',change:0.3},{label:'工业化指数',value:'128.5',change:4.2},
+          {label:'工具进口额',value:'$28亿',change:18.5},{label:'制造业FDI',value:'$180亿',change:22},
+          {label:'基建预算',value:'$1500亿',change:15},{label:'工具本土产能',value:'+15%',change:3}
+        ],comment:'全球工具需求增速最快的主要市场。NIP基建+制造业转移双轮驱动。电钻、角磨机、气动工具、精密测量仪器需求旺盛。本土产能扩张加速，但高端专业级工具仍依赖进口。'},
+        {name:'东南亚(越/印/菲)',flag:'',metrics:[
+          {label:'GDP增速',value:'5.5%',change:0.2},{label:'制造业FDI',value:'$2100亿',change:8},
+          {label:'工业工具采购',value:'+35%',change:5},{label:'工业园建设',value:'加速',change:0}
+        ],comment:'产业链转移持续驱动工业厂房和设备投资。越南胡志明市电子组装厂、印尼新首都Nusantara基建、菲律宾"Build Better More"计划带动专业级工具进口。中国工具企业在当地设厂趋势明显。'},
+        {name:'日本',flag:'',metrics:[
+          {label:'GDP增速',value:'1.2%',change:-0.1},{label:'老龄化率',value:'29.1%',change:0.3},
+          {label:'DIY市场规模',value:'$180亿',change:2.5},{label:'专业工具进口',value:'$12亿',change:4}
+        ],comment:'老龄化推动省力化工具需求增长，无绳化锂电工具渗透率超60%。高精度测量仪器、人体工学设计工具为增长品类。高端品牌偏好强烈。'}
+      ],
+      '中东非洲': [
+        {name:'沙特',flag:'',metrics:[
+          {label:'GDP增速',value:'4.5%',change:0.8},{label:'Vision 2030投资',value:'$5000亿',change:0},
+          {label:'NEOM项目进度',value:'施工高峰',change:0},{label:'工具进口额',value:'$8.5亿',change:25}
+        ],comment:'Vision 2030项目群进入施工高峰期。电钻、角磨机、焊接设备、激光水平仪等专业级工具需求激增。沙特本地工具分销网络快速扩张，中国品牌认可度提升。'},
+        {name:'阿联酋',flag:'',metrics:[
+          {label:'GDP增速',value:'5.0%',change:0.5},{label:'迪拜建筑活动',value:'活跃',change:12},
+          {label:' Expo City后续',value:'推进中',change:0},{label:'酒店翻新',value:'85个',change:15}
+        ],comment:'迪拜房地产和商业项目密集启动。高端电动工具、精密测量仪器、HVAC安装工具需求旺盛。'},
+        {name:'尼日利亚',flag:'',metrics:[
+          {label:'GDP增速',value:'3.8%',change:0.2},{label:'城市化率',value:'54%',change:1.2},
+          {label:'住房缺口',value:'2800万套',change:0},{label:'基础工具进口',value:'$3.2亿',change:10}
+        ],comment:'非洲最大经济体，基础设施和住房缺口巨大。手工具套装、电钻、发电机、水泵等基础工具需求持续。进口主要来自中国和土耳其。'}
+      ],
+      '欧洲': [
+        {name:'德国',flag:'',metrics:[
+          {label:'GDP增速',value:'0.3%',change:-0.2},{label:'工业产出',value:'-1.5%',change:-0.5},
+          {label:'专业工具订单',value:'持平',change:0},{label:'DIY零售额',value:'€85亿',change:3}
+        ],comment:'工业工具需求疲软，但DIY市场稳定。能效改造政策推动热泵安装工具、节能门窗安装工具需求。对工具环保认证要求趋严。'},
+        {name:'英国',flag:'',metrics:[
+          {label:'GDP增速',value:'1.0%',change:0.2},{label:'房屋翻新支出',value:'£420亿',change:4.5},
+          {label:'DIY市场',value:'稳定',change:2},{label:'专业承包商工具采购',value:'恢复中',change:3}
+        ],comment:'工党政府承诺150万套住房建设，规划改革推进中。电钻、锯类、砂光机、测量工具需求有望在下半年回升。'},
+        {name:'波兰/土耳其',flag:'',metrics:[
+          {label:'波兰GDP',value:'3.5%',change:0.3},{label:'土耳其通胀',value:'55%',change:-10},
+          {label:'重建中转',value:'$300亿',change:0},{label:'工具出口',value:'活跃',change:8}
+        ],comment:'土耳其地震灾后重建+乌克兰重建中转需求。波兰作为东欧工具制造和分销中心受益。电钻、角磨机、手动工具套装需求旺盛。'}
+      ],
+      '美洲': [
+        {name:'美国',flag:'',metrics:[
+          {label:'GDP增速',value:'2.5%',change:-0.1},{label:'成屋中位价',value:'$41.2万',change:3.8},
+          {label:'新房开工',value:'142万套',change:-5},{label:'30Y房贷',value:'6.65%',change:-0.15},
+          {label:'DIY工具支出',value:'$480亿',change:6},{label:'专业工具市场',value:'$185亿',change:4}
+        ],comment:'高利率抑制新房开工但房价持续走高，DIY翻新市场活跃。IRA法案推动清洁能源相关工具（热泵安装、太阳能板安装工具）。数据中心建设为精密扭矩工具、电缆压接工具带来增量需求。'},
+        {name:'巴西',flag:'',metrics:[
+          {label:'GDP增速',value:'2.8%',change:0.3},{label:'Selic利率',value:'10.5%',change:-0.5},
+          {label:'住房信贷',value:'增长中',change:8},{label:'基建计划',value:'PAC4',change:0}
+        ],comment:'Lula政府PAC4基建计划和Minha Casa Minha Vida住房计划支撑工具需求。电钻、角磨机、手动工具内需增长。利率下行趋势利好建筑承包商融资。'},
+        {name:'墨西哥',flag:'',metrics:[
+          {label:'GDP增速',value:'2.2%',change:-0.3},{label:'近岸外包FDI',value:'$380亿',change:15},
+          {label:'工业地产',value:'高增长',change:12},{label:'比索汇率',value:'17.5',change:-2}
+        ],comment:'近岸外包(nearshoring)持续驱动工业厂房建设。气动工具、液压工具、重型扳手、精密测量仪器需求旺盛。北部边境城市为主要增长极。'}
+      ]
+    },
+    trends: [
+      {name:'无刷电机(BLDC)电动工具',category:'电动工具',description:'BLDC技术渗透率突破40%，相比传统有刷电机寿命延长3-5倍、能效提升30%。专业承包商和高端DIY用户偏好强烈，锂电钻、角磨机、链锯为核心品类。',drivers:['长寿命','高能效','锂电普及','专业需求'],socialSignals:[
+        {platform:'Google',growth:72},{platform:'YouTube',growth:95},{platform:'Amazon',growth:58}
+      ],satisfaction:65},
+      {name:'智能扭矩扳手',category:'精密测量工具',description:'带蓝牙连接和APP数据记录的智能扭矩扳手搜索量激增120%。汽车维保、航空航天、重型机械装配场景需求强烈。精度可达±1%，支持扭矩曲线记录。',drivers:['精度要求','数据追溯','IoT连接','合规认证'],socialSignals:[
+        {platform:'Google',growth:120},{platform:'YouTube',growth:85},{platform:'X',growth:45}
+      ],satisfaction:30},
+      {name:'激光水平仪/测距仪',category:'测量工具',description:'自调平激光水平仪和手持激光测距仪在DIY和专业施工市场同步增长。替代传统水准仪和卷尺，精度达±1mm/10m。建筑装修、瓷砖铺设、吊顶安装为主要应用场景。',drivers:['精度提升','单人操作','效率提升','DIY友好'],socialSignals:[
+        {platform:'Google',growth:55},{platform:'YouTube',growth:78},{platform:'Pinterest',growth:42}
+      ],satisfaction:50},
+      {name:'锂电园林工具',category:'户外动力设备',description:'锂电链锯、割草机、吹叶机替代汽油动力设备趋势明显。噪音降低60%、零排放、免维护优势显著。欧美郊区住宅用户和市政绿化部门为主要客户。',drivers:['环保法规','低噪音','免维护','锂电成本下降'],socialSignals:[
+        {platform:'Google',growth:48},{platform:'YouTube',growth:62},{platform:'Amazon',growth:55}
+      ],satisfaction:55},
+      {name:'模块化工具系统',category:'多功能工具',description:'同一电池平台兼容电钻、角磨机、链锯等多款工具的模块化系统设计成为主流。Milwaukee M18、DeWalt 20V MAX等平台生态成熟，用户锁定效应强。',drivers:['电池通用','成本节约','品牌忠诚','便携性'],socialSignals:[
+        {platform:'Google',growth:38},{platform:'YouTube',growth:52},{platform:'Reddit',growth:65}
+      ],satisfaction:70}
+    ],
+    supplyChain: [
+      {title:'原材料价格追踪',data:[
+        {item:'热轧卷板(钢材)',value:'$612/吨',change:3.2},
+        {item:'合金钢(Cr-Mo)',value:'$890/吨',change:1.8},
+        {item:'铝(LME)',value:'$2,485/吨',change:2.1},
+        {item:'铜(LME)',value:'$9,520/吨',change:4.5},
+        {item:'锂碳酸盐',value:'$14,200/吨',change:-8.5},
+        {item:'工程塑料(ABS)',value:'$1,650/吨',change:-2.3},
+        {item:'橡胶(NR)',value:'$1,580/吨',change:1.2},
+        {item:'钨钢(硬质合金)',value:'$28,500/吨',change:5.8}
+      ]},
+      {title:'海运运价指数',data:[
+        {item:'BDI(波罗的海干散货)',value:'1,850',change:8.5},
+        {item:'SCFI(上海集装箱)',value:'2,180',change:15.2},
+        {item:'中国-中东(20GP)',value:'$1,250',change:12},
+        {item:'中国-欧洲(20GP)',value:'$2,850',change:18.5},
+        {item:'中国-美西(20GP)',value:'$3,200',change:-5}
+      ]},
+      {title:'关税与贸易政策',data:[
+        {item:'美对华钢制手工具反倾销税',value:'42.3%',change:0},
+        {item:'EU Battery Regulation合规要求',value:'生效中',change:0},
+        {item:'RCEP框架关税减免',value:'生效中',change:0},
+        {item:'印度BIS认证(电动工具)',value:'强制',change:0}
+      ]}
+    ],
+    regulation: [
+      {type:'esg',title:'欧盟新电池法规(EU Battery Regulation)正式实施',summary:'2024年8月起生效，锂电工具需满足碳足迹声明、回收率≥50%、可拆卸设计等要求。出口欧盟的电动工具企业需建立电池护照系统，合规成本上升15-20%。',tags:['电池法规','欧盟','锂电工具','碳足迹']},
+      {type:'standard',title:'美国UL认证更新：电动工具安全标准UL 62841修订',summary:'新版标准强化了对无刷电机工具的电气安全和EMC测试要求。2025年起出口美国的电动工具必须通过新标准认证，影响电钻、角磨机、链锯等品类。',tags:['UL认证','美国','电动工具','安全标准']},
+      {type:'esg',title:'中国双碳目标下工具行业绿色制造指南发布',summary:'工信部发布《五金工具行业绿色低碳发展指南》，鼓励使用再生钢材、生物基塑料包装、能效标签制度。头部企业需在2025年底前完成碳足迹核算。',tags:['双碳','绿色制造','中国','碳足迹']},
+      {type:'standard',title:'ISO 28937:2025手动工具人体工学标准发布',summary:'新版ISO标准对扳手、钳子、螺丝刀等手工具的握持角度、表面纹理、重量分布提出量化要求。欧盟CE认证将引用此标准，影响出口产品设计。',tags:['ISO标准','人体工学','手工具','欧盟']},
+      {type:'warn',title:'东南亚多国提高电动工具能效和噪音标准',summary:'越南、印尼、泰国近期更新电动工具进口技术法规，对噪音限值(≤85dB)和能效等级提出新要求。部分中国出口产品需调整电机参数或增加隔音设计。',tags:['能效标准','噪音限值','东南亚','电动工具']}
+    ],
+    innovation: [
+      {title:'IoT连接智能工具：蓝牙/WiFi数据记录与远程监控',stage:'商业化',summary:'Bosch Connect、Milwaukee ONE-KEY等平台实现扭矩、转速、使用时长等数据云端同步。支持预防性维护提醒、工具防盗追踪、团队设备管理。专业承包商采纳率快速提升。'},
+      {title:'无刷电机(BLDC)技术普及：能效提升30%、寿命延长5倍',stage:'商业化',summary:'BLDC电机在电钻、角磨机、链锯等品类渗透率突破40%。相比传统有刷电机，免碳刷维护、噪音降低15dB、能效提升30%。中国厂商(东成、大有)加速追赶国际品牌。'},
+      {title:'激光测量与AR辅助安装技术',stage:'试点',summary:'Bosch GLM系列激光测距仪集成AR叠加功能，通过手机APP实时显示切割线、水平线。DeWalt激光水平仪支持多平面自调平，精度达±0.2mm/m。装修和瓷砖铺设场景应用广泛。'},
+      {title:'固态电池在电动工具中的应用探索',stage:'研发',summary:'丰田、QuantumScape等公司开发的固态电池能量密度达500Wh/kg(当前锂电的2倍)，充电时间缩短至15分钟。预计2027-2028年量产，将彻底改变锂电工具续航瓶颈。'},
+      {title:'3D打印定制化工具手柄和配件',stage:'试点',summary:'Markforged、Desktop Metal等公司提供金属/复合材料3D打印服务，可定制符合人体工学的扳手手柄、特殊角度钻头夹头。小批量生产成本降至传统CNC的60%。'}
+    ],
+    events: [
+      {date:'2025-06-23',title:'Canton Fair Phase 1 (广交会一期)',description:'五金工具核心展区。电动工具、手工具、气动工具、测量仪器集中展示。全球采购商对接，出口订单签约高峰。',tags:['中国','展会','出口']},
+      {date:'2025-07-01',title:'EU Battery Regulation Q3合规申报截止',description:'2025年Q3锂电工具电池护照数据申报截止日。出口欧盟的电动工具企业需在EU Battery Passport系统提交碳足迹和回收率数据。',tags:['合规','欧盟','电池法规']},
+      {date:'2025-08-15',title:'International Hardware Fair (科隆国际五金展)',description:'全球最大专业五金工具展，覆盖手动工具、电动工具、紧固件、安防设备。Bosch、Milwaukee、Stanley Black & Decker等品牌新品首发。',tags:['德国','展会','专业工具']},
+      {date:'2025-09-01',title:'Fed议息会议',description:'FOMC利率决议。市场当前预期降息25bp概率为65%。影响DIY工具消费信贷成本和零售商采购预算。',tags:['宏观','美国','利率']},
+      {date:'2025-10-15',title:'National Hardware Show (拉斯维加斯)',description:'北美最大五金工具贸易展，聚焦DIY零售渠道和专业承包商市场。Home Depot、Lowe\'s等大型零售商采购对接。',tags:['美国','展会','零售']}
+    ],
+    dataSources: []
+  };
+}
+
+function getEmbeddedTaxonomy() {
+  return {
+    l1:{en:'Hardware & Tools',zh:'五金工具'},
+    categories:{
+      '手动工具':{en:'Hand Tools',zh:'手动工具',l3:[{en:'Wrenches',zh:'扳手'},{en:'Pliers',zh:'钳子'},{en:'Screwdrivers',zh:'螺丝刀'},{en:'Hammers',zh:'锤子'},{en:'Socket Sets',zh:'套筒套装'},{en:'Hex Keys',zh:'内六角扳手'},{en:'Cutting Tools',zh:'切割工具'}],hs_codes:['820320','820330','820411','820420','820540','820590']},
+      '电动工具':{en:'Power Tools',zh:'电动工具',l3:[{en:'Electric Drills',zh:'电钻'},{en:'Angle Grinders',zh:'角磨机'},{en:'Impact Wrenches',zh:'冲击扳手'},{en:'Circular Saws',zh:'圆锯'},{en:'Sanders',zh:'砂光机'},{en:'Jigsaws',zh:'曲线锯'},{en:'Heat Guns',zh:'热风枪'}],hs_codes:['846721','846722','846729','846781','846789']},
+      '气动工具':{en:'Pneumatic Tools',zh:'气动工具',l3:[{en:'Air Impact Wrenches',zh:'气动冲击扳手'},{en:'Air Drills',zh:'气动钻'},{en:'Air Sanders',zh:'气动砂光机'},{en:'Spray Guns',zh:'喷枪'},{en:'Nail Guns',zh:'钉枪'},{en:'Air Compressors',zh:'空压机'}],hs_codes:['846711','846719','841480']},
+      '测量工具':{en:'Measuring Tools',zh:'测量工具',l3:[{en:'Laser Distance Meters',zh:'激光测距仪'},{en:'Laser Levels',zh:'激光水平仪'},{en:'Torque Wrenches',zh:'扭矩扳手'},{en:'Calipers',zh:'卡尺'},{en:'Micrometers',zh:'千分尺'},{en:'Multimeters',zh:'万用表'},{en:'Tape Measures',zh:'卷尺'}],hs_codes:['901580','901730','903180','903289']},
+      '紧固件':{en:'Fasteners',zh:'紧固件',l3:[{en:'Bolts & Nuts',zh:'螺栓螺母'},{en:'Screws',zh:'螺钉'},{en:'Rivets',zh:'铆钉'},{en:'Anchors',zh:'膨胀螺栓'},{en:'Washers',zh:'垫圈'},{en:'Clips & Clamps',zh:'卡扣夹具'}],hs_codes:['731815','731820','741510','741520','761600']},
+      '切削工具':{en:'Cutting Tools',zh:'切削工具',l3:[{en:'Drill Bits',zh:'钻头'},{en:'Saw Blades',zh:'锯片'},{en:'End Mills',zh:'铣刀'},{en:'Taps & Dies',zh:'丝锥板牙'},{en:'Grinding Wheels',zh:'砂轮'},{en:'Cutting Discs',zh:'切割片'}],hs_codes:['820713','820719','820750','820760','820770','820780','820790']},
+      '焊接设备':{en:'Welding Equipment',zh:'焊接设备',l3:[{en:'Arc Welders',zh:'电弧焊机'},{en:'MIG/TIG Welders',zh:'MIG/TIG焊机'},{en:'Welding Rods',zh:'焊条'},{en:'Welding Wire',zh:'焊丝'},{en:'Welding Masks',zh:'焊接面罩'},{en:'Plasma Cutters',zh:'等离子切割机'}],hs_codes:['851521','851529','851531','851539','851580']},
+      '安全防护':{en:'Safety Equipment',zh:'安全防护',l3:[{en:'Safety Glasses',zh:'护目镜'},{en:'Work Gloves',zh:'工作手套'},{en:'Hard Hats',zh:'安全帽'},{en:'Ear Protection',zh:'耳塞'},{en:'Dust Masks',zh:'防尘口罩'},{en:'Safety Vests',zh:'反光背心'}],hs_codes:['900490','420321','650610','902110','902190']}
+    }
+  };
+}
+
+// ===================== PDF EXPORT =====================
+const PDF_SECTIONS = [
+  {id:'summary', name:'本期核心观点', en:'Executive Summary'},
+  {id:'macro', name:'宏观环境', en:'Macro Environment'},
+  {id:'macro-insights', name:'  ↳ 宏观本周洞察', en:'Macro Insights'},
+  {id:'regional', name:'区域与国别分析', en:'Regional Analysis'},
+  {id:'regional-insights', name:'  ↳ 国别本周洞察', en:'Regional Insights'},
+  {id:'products', name:'产品趋势与需求', en:'Product Trends'},
+  {id:'products-insights', name:'  ↳ 产品本周洞察', en:'Product Insights'},
+  {id:'innovation', name:'技术创新', en:'Innovation'},
+  {id:'innovation-insights', name:'  ↳ 创新本周洞察', en:'Innovation Insights'},
+  {id:'supplychain', name:'供应链与贸易', en:'Supply Chain'},
+  {id:'customs-dashboard', name:'海关月度出口看板', en:'Customs Dashboard'},
+  {id:'regulation', name:'监管与ESG', en:'Regulation & ESG'},
+  {id:'research-summary-block', name:'投研摘要(综合)', en:'Research Summary'},
+  {id:'research-items-block', name:'研报列表(详情)', en:'Research Items'},
+  {id:'emerging', name:'新兴需求', en:'Emerging Demand'},
+  {id:'weekly-insights-container', name:'本周洞察(品类汇总)', en:'Weekly Insights'},
+  {id:'categories', name:'品类浏览器(已选类目)', en:'Selected Categories'},
+  {id:'events', name:'事件日历', en:'Events Calendar'},
+  {id:'fx-rates', name:'实时汇率', en:'FX Rates'},
+  {id:'sources', name:'数据源管理', en:'Data Sources'}
+];
+
+function showPDFExport() {
+  var modal = document.getElementById('pdf-modal');
+  var container = document.getElementById('pdf-sections');
+  container.innerHTML = PDF_SECTIONS.map(function(s) {
+    return '<label style="display:flex;align-items:center;gap:10px;padding:8px 12px;margin:2px 0;border-radius:6px;cursor:pointer;transition:background 0.15s" onmouseover="this.style.background=\'#2a2a4a\'" onmouseout="this.style.background=\'transparent\'">' +
+      '<input type="checkbox" value="' + s.id + '" checked style="width:16px;height:16px;accent-color:#4fc3f7">' +
+      '<span style="flex:1;font-size:14px;color:#ddd">' + s.name + '</span>' +
+      '<span style="font-size:11px;color:#888">' + s.en + '</span></label>';
+  }).join('');
+  modal.style.display = 'flex';
+}
+
+function pdfToggleAll(check) {
+  document.querySelectorAll('#pdf-sections input[type=checkbox]').forEach(function(cb) { cb.checked = check; });
+}
+
+function closePDFModal() {
+  document.getElementById('pdf-modal').style.display = 'none';
+}
+
+function confirmPDFExport() {
+  var checked = {};
+  document.querySelectorAll('#pdf-sections input[type=checkbox]:checked').forEach(function(cb) {
+    checked[cb.value] = true;
+  });
+
+  // Handle sub-blocks inside sections
+  // Section insights (nested inside parent sections)
+  var insightIds = ['macro-insights','regional-insights','products-insights','innovation-insights','weekly-insights-container'];
+  insightIds.forEach(function(iid) {
+    var el = document.getElementById(iid);
+    if (el) el.style.display = checked[iid] ? '' : 'none';
+  });
+  // research-summary-block (inside #research)
+  var resSummaryEl = document.getElementById('research-summary-block');
+  if (resSummaryEl) resSummaryEl.style.display = checked['research-summary-block'] ? '' : 'none';
+  // research-items-block (inside #research)
+  var resItemsEl = document.getElementById('research-items-block');
+  if (resItemsEl) resItemsEl.style.display = checked['research-items-block'] ? '' : 'none';
+
+  // Handle parent sections with sub-blocks
+  var categoriesChecked = checked['categories'];
+  var researchChecked = checked['research-summary-block'] || checked['research-items-block'];
+
+  // Hide unchecked top-level sections
+  PDF_SECTIONS.forEach(function(s) {
+    if (s.id === 'weekly-insights-container') return;
+    if (s.id === 'categories') return;
+    if (s.id === 'research-summary-block') return;
+    if (s.id === 'research-items-block') return;
+    if (s.id.endsWith('-insights')) return; // skip all insight sub-blocks
+    var el = document.getElementById(s.id);
+    if (el) el.style.display = checked[s.id] ? '' : 'none';
+  });
+
+  // Handle #research section
+  var researchSection = document.getElementById('research');
+  if (researchSection) researchSection.style.display = researchChecked ? '' : 'none';
+
+  // Handle sections with insight sub-blocks (show parent if insight is checked even if main content unchecked)
+  var insightParents = [
+    {parent:'macro', insight:'macro-insights', grid:'.article-grid'},
+    {parent:'regional', insight:'regional-insights', grid:'.demand-grid'},
+    {parent:'products', insight:'products-insights', grid:'.trend-list'},
+    {parent:'innovation', insight:'innovation-insights', grid:'.inno-grid'}
+  ];
+  insightParents.forEach(function(ip) {
+    var parentEl = document.getElementById(ip.parent);
+    if (!parentEl) return;
+    var parentChecked = checked[ip.parent];
+    var insightChecked = checked[ip.insight];
+    if (!parentChecked && insightChecked) {
+      // Show parent but hide its content grid
+      parentEl.style.display = '';
+      var grid = parentEl.querySelector(ip.grid);
+      if (grid) grid.style.display = 'none';
+    } else if (!parentChecked && !insightChecked) {
+      parentEl.style.display = 'none';
+    } else if (parentChecked) {
+      parentEl.style.display = '';
+      var grid = parentEl.querySelector(ip.grid);
+      if (grid) grid.style.display = '';
+    }
+  });
+
+  // Handle #categories section
+  var catSection = document.getElementById('categories');
+  if (catSection) {
+    if (!categoriesChecked && !checked['weekly-insights-container']) {
+      catSection.style.display = 'none';
+    } else {
+      catSection.style.display = '';
+      var catBody = catSection.querySelector('.cat-body');
+      var catToolbar = catSection.querySelector('.cat-toolbar');
+      if (!categoriesChecked) {
+        if (catBody) catBody.style.display = 'none';
+        if (catToolbar) catToolbar.style.display = 'none';
+      }
+    }
+  }
+
+  // If categories is selected, pre-load viewed category details only
+  if (categoriesChecked) {
+    var detail = document.getElementById('cat-detail');
+    var viewed = Array.from(window._viewedCategories || []);
+    if (!viewed.length) {
+      // No categories viewed yet - show message
+      if (detail) detail.innerHTML = '<div style="padding:20px;text-align:center;color:#999;font-size:13px">请先在品类浏览器中点击查看需要导出的类目</div>';
+      finishPDFExport();
+    } else {
+      if (detail) detail.innerHTML = '<div class="cd-loading" style="padding:20px;text-align:center;color:#999">正在加载 ' + viewed.length + ' 个已选类目详情...</div>';
+      loadViewedCategoriesForPrint(viewed).then(function() {
+        finishPDFExport();
+      });
+    }
+  } else {
+    finishPDFExport();
+  }
+}
+
+function loadViewedCategoriesForPrint(viewedKeys) {
+  var cats = TAXONOMY.categories || {};
+  var detail = document.getElementById('cat-detail');
+  var entries = viewedKeys.map(function(k) { return [k, cats[k]]; }).filter(function(e) { return e[1]; });
+  var withSlug = entries.filter(function(e) { return e[1].l2_slug; });
+
+  if (!withSlug.length) {
+    if (detail) detail.innerHTML = buildSelectedCategoriesHTML(entries);
+    return Promise.resolve();
+  }
+
+  var allData = {};
+  var queue = withSlug.slice();
+  var running = 0;
+  var maxConcurrent = 6;
+
+  return new Promise(function(resolve) {
+    function processNext() {
+      if (!queue.length && running === 0) {
+        if (detail) detail.innerHTML = buildAllCategoriesPrintHTML(cats, allData, entries);
+        resolve();
+        return;
+      }
+      while (running < maxConcurrent && queue.length) {
+        var entry = queue.shift();
+        var key = entry[0];
+        var cat = entry[1];
+        running++;
+        (function(k, c) {
+          fetch('data/categories/建材与房地产/' + c.l2_slug + '.json')
+            .then(function(r) { return r.ok ? r.json() : null; })
+            .then(function(d) {
+              allData[k] = d;
+              running--;
+              processNext();
+            })
+            .catch(function() {
+              running--;
+              processNext();
+            });
+        })(key, cat);
+      }
+    }
+    processNext();
+  });
+}
+
+function buildSelectedCategoriesHTML(entries) {
+  var html = '';
+  entries.forEach(function(e) {
+    var key = e[0], cat = e[1];
+    html += '<div style="margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid #eee">';
+    html += '<h3 style="font-size:15px;margin:0 0 4px">' + esc(cat.zh) + '</h3>';
+    html += '<div style="font-size:12px;color:#999">' + esc(cat.en||'') + ' | HS: ' + (cat.hs_codes||[]).length + '</div>';
+    html += '</div>';
+  });
+  return html;
+}
+
+function buildAllCategoriesPrintHTML(cats, allData, filterEntries) {
+  var entries = filterEntries || [];
+  var html = '';
+  entries.forEach(function(e) {
+    var key = e[0], cat = e[1] || cats[key];
+    if (!cat) return;
+
+    // Category header
+    html += '<div class="cat-print-item" style="margin-bottom:24px;padding-bottom:20px;border-bottom:2px solid #ddd;page-break-before:auto">';
+    html += '<h3 style="font-size:18px;margin:0 0 4px;color:#1a1a2e">' + esc(cat.zh) + '</h3>';
+    html += '<div style="font-size:13px;color:#666;margin-bottom:8px">' + esc(cat.en||'') + '</div>';
+
+    // L3 sub-categories
+    if ((cat.l3||[]).length) {
+      html += '<div style="margin-bottom:10px"><span style="font-size:12px;font-weight:600;color:#444">三级品类: </span>';
+      html += '<span style="font-size:12px;color:#888">' + cat.l3.map(function(l){ return esc(l.zh); }).join(' / ') + '</span></div>';
+    }
+
+    // HS codes
+    if ((cat.hs_codes||[]).length) {
+      html += '<div style="margin-bottom:12px"><span style="font-size:12px;font-weight:600;color:#444">HS编码 (' + cat.hs_codes.length + '): </span>';
+      html += '<span style="font-size:11px;color:#888">' + cat.hs_codes.join(', ') + '</span></div>';
+    }
+
+    // Keywords
+    var kws = cat.keywords_cn || cat.keywords_en || [];
+    if (kws.length) {
+      html += '<div style="margin-bottom:12px;display:flex;gap:4px;flex-wrap:wrap">';
+      kws.slice(0,8).forEach(function(k) {
+        html += '<span style="padding:2px 8px;background:#e3f2fd;color:#1565c0;border-radius:10px;font-size:11px">' + esc(k) + '</span>';
+      });
+      html += '</div>';
+    }
+
+    // Full rich data rendering using the same functions as browser view
+    var d = allData[key];
+    if (d) {
+      var tempDiv = document.createElement('div');
+      renderRichDetail(tempDiv, d);
+      if (tempDiv.innerHTML) {
+        html += '<div class="cat-print-rich" style="margin-top:8px">' + tempDiv.innerHTML + '</div>';
+      }
+    } else {
+      html += '<div style="font-size:12px;color:#999;padding:8px 0">暂无详细数据</div>';
+    }
+
+    html += '</div>';
+  });
+  return html;
+}
+
+function finishPDFExport() {
+  // Hide sidebar and topbar for cleaner print
+  var sidebar = document.querySelector('.sidebar');
+  var topbar = document.querySelector('.topbar');
+  if (sidebar) sidebar.style.display = 'none';
+  if (topbar) topbar.style.display = 'none';
+  closePDFModal();
+  // Add print restore handler
+  window.addEventListener('afterprint', function restore() {
+    // Restore all sections
+    ['summary','macro','regional','products','innovation','supplychain','customs-dashboard','regulation','research','emerging','categories','events','fx-rates','sources'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.style.display = '';
+    });
+    // Restore sub-blocks
+    ['macro-insights','regional-insights','products-insights','innovation-insights','weekly-insights-container','research-summary-block','research-items-block'].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.style.display = '';
+    });
+    // Restore content grids that may have been hidden for insight-only export
+    document.querySelectorAll('.article-grid,.demand-grid,.trend-list,.inno-grid').forEach(function(el) { el.style.display = ''; });
+    var catSection = document.getElementById('categories');
+    if (catSection) {
+      var catBody = catSection.querySelector('.cat-body');
+      var catToolbar = catSection.querySelector('.cat-toolbar');
+      if (catBody) catBody.style.display = '';
+      if (catToolbar) catToolbar.style.display = '';
+    }
+    if (sidebar) sidebar.style.display = '';
+    if (topbar) topbar.style.display = '';
+    window.removeEventListener('afterprint', restore);
+  });
+  setTimeout(function() { window.print(); }, 200);
+}
+
+// ===================== 单品类导出 =====================
+function exportSingleCategory(key) {
+  var cats = (TAXONOMY || {}).categories || {};
+  var cat = cats[key];
+  if (!cat) return;
+
+  // Hide all sections except #categories
+  var allSections = document.querySelectorAll('.section');
+  allSections.forEach(function(s) {
+    if (s.id !== 'categories') s.style.display = 'none';
+  });
+
+  // Hide report hero, exec summary
+  var hero = document.querySelector('.report-hero');
+  if (hero) hero.style.display = 'none';
+  var execSummary = document.querySelector('.exec-summary');
+  if (execSummary) execSummary.style.display = 'none';
+
+  // Hide sidebar, topbar
+  var sidebar = document.querySelector('.sidebar');
+  var topbar = document.querySelector('.topbar');
+  if (sidebar) sidebar.style.display = 'none';
+  if (topbar) topbar.style.display = 'none';
+
+  // Hide category toolbar and L2 list, weekly insights
+  var catToolbar = document.querySelector('.cat-toolbar');
+  var catL2List = document.getElementById('cat-l2-list');
+  var weeklyInsights = document.getElementById('weekly-insights-container');
+  if (catToolbar) catToolbar.style.display = 'none';
+  if (catL2List) catL2List.style.display = 'none';
+  if (weeklyInsights) weeklyInsights.style.display = 'none';
+
+  // Hide the section header (numbered title)
+  var catSection = document.getElementById('categories');
+  var catSectionHeader = catSection ? catSection.querySelector('.section-header') : null;
+  if (catSectionHeader) catSectionHeader.style.display = 'none';
+
+  // Hide the export button itself in print
+  var exportBtns = document.querySelectorAll('.cat-detail button');
+  exportBtns.forEach(function(btn) { btn.style.display = 'none'; });
+
+  // Set detail area to full width
+  var catBody = document.querySelector('.cat-body');
+  if (catBody) catBody.style.gridTemplateColumns = '1fr';
+  var catDetail = document.getElementById('cat-detail');
+  if (catDetail) {
+    catDetail.style.maxHeight = 'none';
+    catDetail.style.overflow = 'visible';
+  }
+
+  // Load rich data if not already loaded, then print
+  function doPrint() {
+    // Add a print title header
+    var printHeader = document.createElement('div');
+    printHeader.id = '_single-cat-print-header';
+    printHeader.style.cssText = 'padding:16px 0 12px;border-bottom:2px solid #1a2332;margin-bottom:16px';
+    printHeader.innerHTML = '<h2 style="font-size:20px;color:#1a2332;margin:0">' + esc(cat.zh) +
+      ' <span style="font-size:14px;color:#6b7c93;font-weight:400">' + esc(cat.en || '') + '</span></h2>' +
+      '<div style="font-size:12px;color:#999;margin-top:4px">五金工具行业全球资讯期刊 | HT Global Journal | ' + (WEEK_DATA.date || '') + '</div>';
+    catDetail.insertBefore(printHeader, catDetail.firstChild);
+
+    window.addEventListener('afterprint', function restore() {
+      // Remove print header
+      var ph = document.getElementById('_single-cat-print-header');
+      if (ph) ph.remove();
+      // Restore all sections
+      allSections.forEach(function(s) { s.style.display = ''; });
+      if (hero) hero.style.display = '';
+      if (execSummary) execSummary.style.display = '';
+      if (sidebar) sidebar.style.display = '';
+      if (topbar) topbar.style.display = '';
+      if (catToolbar) catToolbar.style.display = '';
+      if (catL2List) catL2List.style.display = '';
+      if (weeklyInsights) weeklyInsights.style.display = '';
+      if (catSectionHeader) catSectionHeader.style.display = '';
+      exportBtns.forEach(function(btn) { btn.style.display = ''; });
+      if (catBody) catBody.style.gridTemplateColumns = '';
+      if (catDetail) {
+        catDetail.style.maxHeight = '';
+        catDetail.style.overflow = '';
+      }
+      window.removeEventListener('afterprint', restore);
+    });
+    setTimeout(function() { window.print(); }, 200);
+  }
+
+  // Check if rich data already loaded (look for .cd-section inside detail)
+  if (catDetail && catDetail.querySelector('.cd-section')) {
+    doPrint();
+  } else if (cat.l2_slug) {
+    // Load rich data first
+    fetch('data/categories/建材与房地产/' + cat.l2_slug + '.json')
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(d) {
+        if (d) {
+          var richDiv = catDetail.querySelector('.cd-loading');
+          if (!richDiv) {
+            richDiv = document.createElement('div');
+            catDetail.appendChild(richDiv);
+          }
+          renderRichDetail(richDiv, d);
+        }
+        doPrint();
+      })
+      .catch(function() { doPrint(); });
+  } else {
+    doPrint();
+  }
+}
+
+// ===================== 各板块本周洞察 =====================
+function renderSectionInsights() {
+  var si = (WEEK_DATA || {}).sectionInsights;
+  if (!si) return;
+
+  var sections = [
+    {id:'macro-insights', key:'macro', color:'#4fc3f7', title:'宏观洞察', en:'Macro Insights'},
+    {id:'regional-insights', key:'regional', color:'#66bb6a', title:'国别洞察', en:'Regional Insights'},
+    {id:'products-insights', key:'products', color:'#ffa726', title:'产品洞察', en:'Product Insights'},
+    {id:'innovation-insights', key:'innovation', color:'#ab47bc', title:'创新洞察', en:'Innovation Insights'}
+  ];
+
+  sections.forEach(function(sec) {
+    var container = document.getElementById(sec.id);
+    if (!container) return;
+    var data = si[sec.key];
+    if (!data || (!data.summary && !(data.bullets && data.bullets.length))) {
+      container.innerHTML = '';
+      return;
+    }
+
+    var html = '<div style="background:linear-gradient(135deg,#0d1b2a,#1b2838);border:1px solid #2a3a4a;border-radius:10px;padding:14px 16px;margin-top:8px">';
+    html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">';
+    html += '<span style="display:inline-block;width:8px;height:8px;background:' + sec.color + ';border-radius:50%"></span>';
+    html += '<h4 style="margin:0;font-size:14px;color:#e0e0e0">' + sec.title + '</h4>';
+    html += '<span style="font-size:11px;color:#888">' + sec.en + '</span></div>';
+
+    if (data.summary) {
+      html += '<div style="font-size:12px;color:#b0bec5;line-height:1.7;margin-bottom:' + (data.bullets && data.bullets.length ? '10px' : '0') + '">' + esc(data.summary) + '</div>';
+    }
+
+    if (data.bullets && data.bullets.length) {
+      html += '<div style="display:flex;flex-direction:column;gap:5px">';
+      data.bullets.forEach(function(b) {
+        var bulletColor = b.type === 'up' ? '#81c784' : b.type === 'down' ? '#ef9a9a' : b.type === 'alert' ? '#ffcc80' : '#90a4ae';
+        var bulletBg = b.type === 'up' ? '#1a2a1a' : b.type === 'down' ? '#2a1a1a' : b.type === 'alert' ? '#2a2210' : '#1a1a2e';
+        html += '<div style="padding:6px 10px;background:' + bulletBg + ';border-left:3px solid ' + bulletColor + ';border-radius:0 6px 6px 0;font-size:12px;color:' + bulletColor + '">' + esc(b.text || '') + '</div>';
+      });
+      html += '</div>';
+    }
+
+    html += '</div>';
+    // Print-only separator between insight and main content
+    html += '<div class="insight-print-sep" style="display:none;text-align:center;font-size:10px;color:#999;padding:4px 0;border-top:1px solid #ddd;margin-top:8px">— 以上为本周洞察 · 以下为板块主体内容 —</div>';
+    container.innerHTML = html;
+  });
+}
+
+// ===================== 品类浏览器: 本周洞察汇总 =====================
+function renderWeeklyInsights() {
+  var d = WEEK_DATA;
+  if (!d || !d.issue) return '';
+
+  var html = '<div style="background:linear-gradient(135deg,#0d1b2a,#1b2838);border:1px solid #2a3a4a;border-radius:10px;padding:16px">';
+  html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><h3 style="margin:0;font-size:15px;color:#e0e0e0">本周洞察</h3><span style="font-size:11px;color:#888">Weekly Insights</span></div>';
+
+  // 1. 高增机会 (从 keyTakeaways 提取 opportunity 标签)
+  var opportunities = (d.keyTakeaways || []).filter(function(t) { return t.tag === 'opportunity'; });
+  if (opportunities.length) {
+    html += '<div style="margin-bottom:14px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:8px"><span style="display:inline-block;width:8px;height:8px;background:#4caf50;border-radius:50%"></span><span style="font-size:13px;font-weight:600;color:#81c784">高增机会</span><span style="font-size:11px;color:#888">(' + opportunities.length + '条)</span></div>';
+    html += '<div style="display:flex;flex-direction:column;gap:6px">';
+    opportunities.slice(0, 5).forEach(function(o) {
+      html += '<div style="padding:8px 12px;background:#1a2a1a;border-left:3px solid #4caf50;border-radius:0 6px 6px 0;font-size:12px;color:#c8e6c9"><b>' + esc(o.headline || '') + '</b>' +
+        (o.detail ? '<div style="margin-top:3px;color:#a5d6a7;font-size:11px;line-height:1.5">' + esc((o.detail || '').substring(0, 150)) + '</div>' : '') +
+        '</div>';
+    });
+    html += '</div></div>';
+  }
+
+  // 2. 风险提示 (从 keyTakeaways 提取 risk 标签)
+  var risks = (d.keyTakeaways || []).filter(function(t) { return t.tag === 'risk'; });
+  if (risks.length) {
+    html += '<div style="margin-bottom:14px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:8px"><span style="display:inline-block;width:8px;height:8px;background:#f44336;border-radius:50%"></span><span style="font-size:13px;font-weight:600;color:#ef9a9a">风险提示</span><span style="font-size:11px;color:#888">(' + risks.length + '条)</span></div>';
+    html += '<div style="display:flex;flex-direction:column;gap:6px">';
+    risks.slice(0, 5).forEach(function(r) {
+      html += '<div style="padding:8px 12px;background:#2a1a1a;border-left:3px solid #f44336;border-radius:0 6px 6px 0;font-size:12px;color:#ffcdd2"><b>' + esc(r.headline || '') + '</b>' +
+        (r.detail ? '<div style="margin-top:3px;color:#ef9a9a;font-size:11px;line-height:1.5">' + esc((r.detail || '').substring(0, 150)) + '</div>' : '') +
+        '</div>';
+    });
+    html += '</div></div>';
+  }
+
+  // 3. 关注动态 (watch 标签 + emerging demands)
+  var watches = (d.keyTakeaways || []).filter(function(t) { return t.tag === 'watch'; });
+  var emerging = d.emergingDemand || [];
+  if (watches.length || emerging.length) {
+    html += '<div style="margin-bottom:14px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:8px"><span style="display:inline-block;width:8px;height:8px;background:#ff9800;border-radius:50%"></span><span style="font-size:13px;font-weight:600;color:#ffcc80">关注动态</span><span style="font-size:11px;color:#888">(' + (watches.length + emerging.length) + '条)</span></div>';
+    html += '<div style="display:flex;flex-direction:column;gap:6px">';
+    watches.slice(0, 3).forEach(function(w) {
+      html += '<div style="padding:8px 12px;background:#2a2210;border-left:3px solid #ff9800;border-radius:0 6px 6px 0;font-size:12px;color:#ffe0b2"><b>' + esc(w.headline || '') + '</b></div>';
+    });
+    emerging.slice(0, 3).forEach(function(e) {
+      var strengthIcon = e.strength === 'strong' ? '🔥' : e.strength === 'medium' ? '⬆' : '→';
+      html += '<div style="padding:8px 12px;background:#2a2210;border-left:3px solid #ff9800;border-radius:0 6px 6px 0;font-size:12px;color:#ffe0b2">' + strengthIcon + ' <b>' + esc(e.name || '') + '</b> (x' + (e.signal_count || 0) + ') - ' + esc(e.description || '').substring(0, 80) + '</div>';
+    });
+    html += '</div></div>';
+  }
+
+  // 4. 数据概览 (sources summary)
+  var sources = d.sources || '';
+  if (sources) {
+    html += '<div style="padding:10px 12px;background:#1a1a2e;border-radius:8px;font-size:11px;color:#aaa;line-height:1.8">';
+    html += '<span style="font-weight:600;color:#90a4ae">数据覆盖: </span>' + esc(sources);
+    html += '</div>';
+  }
+
+  html += '</div>';
+  return html;
+}
+
+// Start
+init();
+</script>
+</body>
+</html>
